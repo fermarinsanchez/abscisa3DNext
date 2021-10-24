@@ -1,0 +1,17 @@
+
+.servicesContainer {
+    margin-left: 32px;
+
+}
+.servicesHeader {
+    padding-top: 62px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-stretch: normal;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #05f0d4;
+}

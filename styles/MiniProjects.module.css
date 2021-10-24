@@ -1,0 +1,25 @@
+.cardItem {
+    position: relative;
+    margin: 0 0 56px 32px;
+    width: 244px;
+    height: 244px;
+    flex-grow: 0;
+    margin: 39px 5px 56px 30px;
+}
+
+.cardTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fffeed;
+    position:absolute;
+    top: 136px;
+    left: 66px;
+    width: 182px;
+    margin: 0;
+}

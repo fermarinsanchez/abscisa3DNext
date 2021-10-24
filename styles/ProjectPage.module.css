@@ -1,0 +1,68 @@
+.topHeader {
+    width: 297px;
+    height: 114px;
+    margin: 132px 0 0px 23px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #05f0d4;
+}
+
+.containerPhotos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.firstCP {
+    width: 262px;
+    height: 230px;
+    margin: 0 0 16px 23px;
+}
+
+.secondCP {
+    width: 262px;
+    height: 120px;
+    flex-grow: 0;
+    margin: 0 0 16px 23px;
+}
+
+.thirdCP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 263px;
+    margin: 0 0px 32px 23px;
+}
+
+.containerData {
+    margin: 0 0px 32px 23px;
+}
+
+.containerData li {
+    list-style: none;
+    vertical-align: top;
+
+}
+
+.containerData tr {
+    min-width: 200px;
+    vertical-align: top;
+}
+
+.containerData td {
+    min-width: 110px;
+}
+
+.containerData td p:first-child {
+    margin-top: 0px;
+}
+
+.projectDescription p {
+    margin: 0 32px 32px 23px;
+}
