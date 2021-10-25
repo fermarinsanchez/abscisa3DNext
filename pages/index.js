@@ -25,6 +25,7 @@ const Home = ({ projects }) => {
             <source src='/videos/abscisa-web.mp4' />
             <source src='/videos/abscisa-web.webm' />
           </video>
+          <div className={style.leftBlock}></div>
         </div>
         <div className={style.backgroundHover}></div>
         <h1 className={style.h1_hidden}>Capturando la realidad</h1>
@@ -79,46 +80,48 @@ const Home = ({ projects }) => {
           </div>
           <h5 className={style.our_serv_text}>Nuestros Servicios</h5>
         </div>
-        <div className={style.container_last_projects}>
+        <div className={style.container_last_projects_text}>
           <h5>Ultimos Proyectos</h5>
+        </div>
+        <div className={style.container_last_projects}>
           <Link href={`/projects/${projects[0].id}`} passHref>
-          <div className={style.card_project_1}>
-            <h5 className={style.card_project_title}>{projects[0].name}</h5>
-            <p className={style.card_project_year}>2020</p>
-            <div className={style.containerImageProject}>
-              <img src={`/${projects[0].img}`} alt="card image mocked" />
+            <div className={style.card_project_1}>
+              <h5 className={style.card_project_title}>{projects[0].name}</h5>
+              <p className={style.card_project_year}>2020</p>
+              <div className={style.containerImageProject}>
+                <img src={`/${projects[0].img}`} alt="card image mocked" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link href={`/projects/${projects[1].id}`} passHref>
-          <div className={style.card_project_2}>
-            <h5 className={style.card_project_title}>Torre Norte</h5>
-            <p className={style.card_project_year}>2020</p>
-            <div className={style.containerImageProject}>
-              <img src={`/${projects[1].img}`} alt="card image mocked" />
+            <div className={style.card_project_2}>
+              <h5 className={style.card_project_title}>Torre Norte</h5>
+              <p className={style.card_project_year}>2020</p>
+              <div className={style.containerImageProject}>
+                <img src={`/${projects[1].img}`} alt="card image mocked" />
+              </div>
             </div>
-          </div>
           </Link>
 
           <Link href={`/projects/${projects[2].id}`} passHref>
-          <div className={style.card_project_3}>
-            <h5 className={style.card_project_title}>Torre Norte</h5>
-            <p className={style.card_project_year}>2020</p>
-            <div className={style.containerImageProject}>
-              <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
+            <div className={style.card_project_3}>
+              <h5 className={style.card_project_title}>Torre Norte</h5>
+              <p className={style.card_project_year}>2020</p>
+              <div className={style.containerImageProject}>
+                <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
 
+              </div>
             </div>
-          </div>
           </Link>
-          
+
           <Link href={`/projects/${projects[3].id}`} passHref>
-          <div className={style.card_project_4}>
-            <h5 className={style.card_project_title} id="mas_proyectos">Torre Norte</h5>
-            <p className={style.card_project_year}>2020</p>
-            <div className={style.containerImageProject}>
-              <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
+            <div className={style.card_project_4}>
+              <h5 className={style.card_project_title} id="mas_proyectos">Torre Norte</h5>
+              <p className={style.card_project_year}>2020</p>
+              <div className={style.containerImageProject}>
+                <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
+              </div>
             </div>
-          </div>
           </Link>
 
         </div>

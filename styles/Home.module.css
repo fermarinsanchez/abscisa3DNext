@@ -13,7 +13,7 @@
   z-index: -2;
 }
 
-.video {
+.video {
   position: absolute;
   left: -60%;
 }
@@ -29,7 +29,7 @@
   background-color: rgba(24, 25, 25, 0.8);
   animation-name: overlay;
   animation-duration: 4s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
 }
 
 .h1_hidden {
@@ -126,7 +126,7 @@
   font-weight: 300;
 }
 
-.container_last_projects>h5 {
+.container_last_projects_text>h5{
   margin: 50px 36px 0px 36px;
   font-size: 30px;
   text-align: left;
@@ -204,6 +204,7 @@
   font-size: 18px;
   color: #a5a5a5;
 }
+
 .containerImageProject {
   width: 218px;
   height: 110px;
@@ -327,26 +328,167 @@
 }
 
 @keyframes overlay {
-    0%   { background-color: rgba(24, 25, 25, 1);}
-    25%  { background-color: rgba(24, 25, 25, 1);}
-    50%  { background-color: rgba(24, 25, 25, 1);}
-    100% { background-color: rgba(24, 25, 25, 0.8);}
+  0% {
+    background-color: rgba(24, 25, 25, 1);
+  }
+
+  25% {
+    background-color: rgba(24, 25, 25, 1);
+  }
+
+  50% {
+    background-color: rgba(24, 25, 25, 1);
+  }
+
+  100% {
+    background-color: rgba(24, 25, 25, 0.8);
+  }
 }
 
-@keyframes fadeUpInH2
-{
-  from { opacity:0; font-size: 30px; margin-right: 200px}
-  to { opacity:1;  font-size: 42px;}
+@keyframes fadeUpInH2 {
+  from {
+    opacity: 0;
+    font-size: 30px;
+    margin-right: 200px
+  }
+
+  to {
+    opacity: 1;
+    font-size: 42px;
+  }
 }
 
-@keyframes fadeUpInH3
-{
+@keyframes fadeUpInH3 {
 
-  0%   { opacity:0; padding-top: 45px; color: var(--white);}
-  25%  { opacity:0; padding-top: 30px; color: var(--white);}
-  50%  { opacity:0; padding-top: 15px; color: var(--green);;}
-  100% { opacity:1; padding-top: 0px; color: var(--green);}
-  
+  0% {
+    opacity: 0;
+    padding-top: 45px;
+    color: var(--white);
+  }
+
+  25% {
+    opacity: 0;
+    padding-top: 30px;
+    color: var(--white);
+  }
+
+  50% {
+    opacity: 0;
+    padding-top: 15px;
+    color: var(--green);
+    ;
+  }
+
+  100% {
+    opacity: 1;
+    padding-top: 0px;
+    color: var(--green);
+  }
+
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {
+  .headers_mobile {
+    width: 100%;
+    height: 378px;
+  }
 
+  .wrapper_testimonials {
+    margin: -10px 34px 30px 30px;
+  }
+
+  .container_our_services {
+    margin: 0 auto;
+  }
+
+  .container_last_projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .backgroundVideo {
+    height: 89vh;
+  }
+
+  .card_project_2 {
+    margin: 34px 44px 34px 56px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .backgroundVideo {
+    height: 60vh;
+    display: flex;
+  }
+  .video {
+    margin-left: 62%;
+    height: 612px;
+  }
+  .wrapper_testimonials{
+    margin: 34px 60px;
+  }
+  .container_our_services {
+    margin: 0 auto;
+  }
+  .container_last_projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card_project_2 {
+    margin: 34px 44px 34px 56px;
+  }
+  .leftBlock {
+    width: 33vw;
+    height: 100%;
+    background-color: #181919;
+    z-index: 99;
+  }
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .backgroundVideo {
+    height: 53vh;
+    width: 100vw;
+    display: flex;
+
+  }
+  .video {
+    margin-left: 90%;
+    height: 407px;
+  }
+  .leftBlock {
+    width: 13vw;
+    height: 100%;
+    background-color: #181919;
+    z-index: 99;
+  }
+  .backgroundHover {
+    width: 102vw;
+  }
+
+  .container_our_services {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}
+ 
