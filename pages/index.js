@@ -48,16 +48,19 @@ const Home = ({ projects }) => {
           </defs>
         </svg>
         <div className={style.container_testimonial}>
-          <p>Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.</p>
-          <h6>JUAN LÓPEZ</h6>
+          <h3>Abscisa revisa el entorno</h3>
+          <h4>EL PAÍS</h4>
+          <p>{"Entrevistamos a la CEO de Abscisa en nuestro"} <a href='www.google.es'>artículo semanal</a> {" ."}</p>
         </div>
         <div className={style.container_testimonial_right} >
-          <p>Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.</p>
-          <h6 className={style.testimonial_author}>JUAN LÓPEZ</h6>
+        <h3>Abscisa revisa el entorno</h3>
+          <h4>EL PAÍS</h4>
+          <p>Entrevistamos a la CEO de Abscisa en nuestro artículo semanal.</p>
         </div>
         <div className={style.container_testimonial}>
-          <p>Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.</p>
-          <h6>JUAN LÓPEZ</h6>
+        <h3>Abscisa revisa el entorno</h3>
+          <h4>EL PAÍS</h4>
+          <p>Entrevistamos a la CEO de Abscisa en nuestro artículo semanal.</p>
         </div>
         <svg data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg" width="98" height="62" fill="none" viewBox="0 0 98 62" style={{ marginTop: 5 }}>
           <g clipPath="url(#clip0)">
@@ -72,14 +75,14 @@ const Home = ({ projects }) => {
         </svg>
       </section>
       <section id="nuestros_servicios">
-        <div className={style.container_our_services}>
+        {/* <div className={style.container_our_services}>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="125" fill="none" viewBox="0 0 100 125">
               <path fill="#FFFEED" d="M50 13c-3.302 0-6 2.698-6 6 0 2.965 2.165 5.431 5 5.906v13.469l-18.438 9.219c-.17.082-.312.211-.412.372-.1.16-.151.345-.15.534v22.344l-11.938 6.969C16.997 76.132 15.127 75 13 75c-3.302 0-6 2.698-6 6s2.698 6 6 6 6-2.698 6-6c0-.448-.062-.892-.156-1.313l12.093-7.062L49.47 83.844c.159.1.343.153.531.153s.372-.053.531-.153l18.532-11.219 12.093 7.063c-.094.42-.156.864-.156 1.312 0 3.302 2.698 6 6 6s6-2.698 6-6-2.698-6-6-6c-2.127 0-3.996 1.132-5.063 2.813L70 70.843V48.5c.001-.189-.05-.374-.15-.534-.1-.16-.243-.29-.412-.372l-13-6.5c-.12-.058-.249-.091-.38-.099-.133-.007-.265.011-.39.055-.124.043-.24.111-.338.199-.099.088-.179.194-.236.313-.058.12-.091.249-.099.38-.007.133.011.265.055.39.043.124.111.24.199.338.088.099.194.179.313.236l11.22 5.625L50 57.844 33.219 48.53l17.218-8.625c.17-.082.313-.211.413-.372.1-.16.151-.345.15-.534V24.906c2.835-.475 5-2.941 5-5.906 0-3.302-2.698-6-6-6zm0 2c2.221 0 4 1.779 4 4s-1.779 4-4 4-4-1.779-4-4 1.779-4 4-4zM32 50.156l17 9.438V81.25L32 70.937v-20.78zm36 0v20.782L51 81.25V59.594l17-9.438zM13 77c2.221 0 4 1.779 4 4s-1.779 4-4 4-4-1.779-4-4 1.779-4 4-4zm74 0c2.221 0 4 1.779 4 4s-1.779 4-4 4-4-1.779-4-4 1.779-4 4-4z" />
             </svg>
           </div>
           <h5 className={style.our_serv_text}>Nuestros Servicios</h5>
-        </div>
+        </div> */}
         <div className={style.container_last_projects_text}>
           <h5>Ultimos Proyectos</h5>
         </div>
@@ -113,35 +116,27 @@ const Home = ({ projects }) => {
               </div>
             </div>
           </Link>
-
-          <Link href={`/projects/${projects[3].id}`} passHref>
-            <div className={style.card_project_4}>
-              <h5 className={style.card_project_title} id="mas_proyectos">Torre Norte</h5>
-              <p className={style.card_project_year}>2020</p>
-              <div className={style.containerImageProject}>
-                <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
+          <Link href='/projects' passHref>
+            <div className={style.container_mas_proyectos} >
+              <img
+                src='/images/icono_mas_proyectos.png'
+                alt='more projects icon #ABSCISA3d'
+              />
+              <div className={style.container_with_arrow}>
+                <p >Más proyectos</p>
+                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M11.9041 2.61793L8.99682 0.110804C8.66288 -0.119208 8.48609 0.0187998 8.4468 0.43282V2.22691H0.53038C0.235725 2.22691 0 2.50292 0 2.84794C0 3.21596 0.235725 3.49197 0.53038 3.49197H8.4468V5.42407C8.46644 6.0221 8.66288 6.1141 8.99682 5.88409L11.9041 3.05495C12.022 2.93994 12.0416 2.77894 11.9041 2.61793Z" fill="#05f0d4" />
+                </svg>
               </div>
             </div>
           </Link>
-
         </div>
-        <Link href='/projects' passHref>
-          <div className={style.container_mas_proyectos} >
-            <svg xmlns="http://www.w3.org/2000/svg" width='34' height='30' viewBox="0 0 32 32"><defs><style>{`.cls-1{fill :#fffeed, fill-rule: evenodd}`}</style></defs><title>Recurso 1</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><g id="Capa_2-2" data-name="Capa 2"><g id="Capa_1-2-2" data-name="Capa 1-2"><path className="cls-1" fill='#fffeed' d="M0,3A3,3,0,0,1,3,0h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3ZM3,2A1,1,0,0,0,2,3v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1Z" /><path className="cls-1" fill='#fffeed' d="M0,21a3,3,0,0,1,3-3h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3H0Zm3-1a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V21a1,1,0,0,0-1-1Z" /><path className="cls-1" fill='#fffeed' d="M21,0a3,3,0,0,0-3,3v8a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3ZM20,3a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1H21a1,1,0,0,1-1-1Z" /><path className="cls-1" fill='#fffeed' d="M18,21a3,3,0,0,1,3-3h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H21a3,3,0,0,1-3-3h0Zm3-1a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V21a1,1,0,0,0-1-1Z" /></g></g></g></g></svg>
-            <div className={style.container_with_arrow}>
-              <p >Más proyectos</p>
-              <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M11.9041 2.61793L8.99682 0.110804C8.66288 -0.119208 8.48609 0.0187998 8.4468 0.43282V2.22691H0.53038C0.235725 2.22691 0 2.50292 0 2.84794C0 3.21596 0.235725 3.49197 0.53038 3.49197H8.4468V5.42407C8.46644 6.0221 8.66288 6.1141 8.99682 5.88409L11.9041 3.05495C12.022 2.93994 12.0416 2.77894 11.9041 2.61793Z" fill="#05F0D4" />
-              </svg>
-            </div>
-          </div>
-        </Link>
       </section>
       <section id="equipo">
         <div className={style.container_sobre_nosotros}>
-          <h5>Sobre Nosotros</h5>
-          <p className={style.sobre_nosotros_text_1} >Abscisa 3D es un estudio multidisciplinar especializado en proyectos de nubes de puntos, modelados tridimensionales y BIM.</p>
-          <p className={style.sobre_nosotros_text_2}>Capturamos la realidad mediante láser escáner, drone, cámaras fotográficas y equipos de topografía para luego digitarlizarla y convertirla en planos 2D, modelado 3D o BIM</p>
+          <h5>Sobre #ABSCISA3d</h5>
+          <p className={style.sobre_nosotros_text_1} >Somos un estudio especializado en proyectos de nubes de puntos, modelados y BIM.</p>
+          <p className={style.sobre_nosotros_text_2}>Capturamos la realidad para transformarla en un entorno digital.</p>
           <h5 style={{ marginBottom: 0 }} id='equipo'>Equipo</h5>
           <div className={style.equipo_cards}>
             <div className={style.container_card_sn}>

@@ -60,6 +60,9 @@ const ProjectPage = ({ project }) => (
                         objectFit='cover'
                     />
                 </div>
+                <div className={style.containerSketchFab}>
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Dead Sea Qumran" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/bf4bd5df05134faea2c86bc85cb90a3d/embed?ui_theme=dark"  > </iframe> </div>
+                </div>
             </div>
             <div className={style.containerData}>
                 <table>

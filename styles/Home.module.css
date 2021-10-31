@@ -7,10 +7,12 @@
 
 .backgroundVideo {
   position: absolute;
-  width: 98vw;
-  height: 82vh;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   z-index: -2;
+  top:0;
+  left:0;
 }
 
 .video {
@@ -28,7 +30,7 @@
   z-index: -1;
   background-color: rgba(24, 25, 25, 0.8);
   animation-name: overlay;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-timing-function: ease-in;
 }
 
@@ -47,7 +49,6 @@
 
 .headers_mobile>h2 {
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
   font-size: 42px;
   font-weight: 400;
   margin: 8px 25px 17px 36px;
@@ -56,11 +57,11 @@
 }
 
 .headers_mobile>h3 {
-  color: var(--green);
+  color: #a5a5a5;
   font-family: 'Oswald', sans-serif;
-  margin: 0px 55px 0 36px;
+  margin: 0px 100px 0 36px;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: normal;
   animation: fadeUpInH3 3s ease-in;
   transition-delay: 1.5s;
@@ -70,7 +71,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 34px 30px;
+  margin: 164px 36px 34px 36px;
+}
+
+.container_testimonial h3 {
+  text-align: left;
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+.container_testimonial h4 {
+  text-align: left;
+  color: #A5A5A5;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container_testimonial p {
@@ -88,6 +106,22 @@
   margin-top: 0px;
   font-family: 'Roboto', sans-serif;
 }
+.container_testimonial_right h3 {
+  text-align: right;
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+.container_testimonial_right h4 {
+  text-align: right;
+  color: #A5A5A5;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-family: 'Oswald', sans-serif;
+}
 
 .container_testimonial h6 {
   text-align: center;
@@ -99,17 +133,8 @@
   margin-bottom: 20px;
 }
 
-.testimonial_author {
-  text-align: center;
-  color: var(--green);
-  font-size: 14px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-.container_our_services {
+/* .container_our_services {
   margin: 50px 36px 0px 36px;
   background: url('../public/images/abstract-3d-texture-vector-black-square-pattern-background_45981-289.jpeg');
   width: 80%;
@@ -124,7 +149,7 @@
   font-size: 30px;
   text-align: left;
   font-weight: 300;
-}
+} */
 
 .container_last_projects_text>h5{
   margin: 50px 36px 0px 36px;
@@ -200,7 +225,7 @@
 
 .card_project_year {
   margin: -4px 177px 73px 2px;
-  font-family: Roboto;
+  font-family: 'Oswald';
   font-size: 18px;
   color: #a5a5a5;
 }
@@ -232,6 +257,11 @@
   color: var(--white);
 }
 
+.container_mas_proyectos img {
+  width: 30px;
+  height: 30px;
+}
+
 .container_with_arrow {
   display: flex;
   align-items: center;
@@ -246,17 +276,23 @@
 }
 
 
-.container_sobre_nosotros {}
+.container_sobre_nosotros {
+  background-color: #232323;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
 
 .container_sobre_nosotros>h5 {
-  margin: 0 84px 30px 36px;
+  margin: 0 36px 30px 36px;
   font-size: 30px;
   color: #fffeed;
   font-weight: 300;
 }
 
 .sobre_nosotros_text_1 {
-  margin: 0px 0 20px 36px;
+  margin: 0px 36px 20px 36px;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -268,16 +304,16 @@
 }
 
 .sobre_nosotros_text_2 {
-  margin: 20px 0 60px 36px;
+  margin: 20px 36px 60px 36px;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #fdfad6;
+  color: #a5a5a5;;
 }
 
 .equipo_cards {
@@ -316,15 +352,15 @@
 
 .container_card_sn>p {
   margin: 8px 151px 0 36px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
+  font-family: 'Oswald';
+  font-size: 18px;
+  font-weight: 100;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #fffeed;
+  color: #a5a5a5;
 }
 
 @keyframes overlay {
@@ -375,14 +411,14 @@
   50% {
     opacity: 0;
     padding-top: 15px;
-    color: var(--green);
+    color: var(--grey);
     ;
   }
 
   100% {
     opacity: 1;
     padding-top: 0px;
-    color: var(--green);
+    color: var(--grey);
   }
 
 }
@@ -391,11 +427,11 @@
 @media only screen and (min-width : 321px) and (orientation : landscape) {
   .headers_mobile {
     width: 100%;
-    height: 378px;
+    height: 100vh;
   }
 
   .wrapper_testimonials {
-    margin: -10px 34px 30px 30px;
+    margin: 30px 34px 30px 30px;
   }
 
   .container_our_services {
@@ -406,10 +442,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .container_mas_proyectos {
+    width: 50%;
   }
 
   .backgroundVideo {
-    height: 89vh;
+    height: 100vh;
+  }
+
+  .backgroundHover {
+    height: 101vh;
   }
 
   .card_project_2 {
@@ -419,16 +464,20 @@
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .headers_mobile {
+    width: 100%;
+    height: 100vh;
+  }
   .backgroundVideo {
-    height: 60vh;
+    height: 100vh;
     display: flex;
   }
   .video {
-    margin-left: 62%;
-    height: 612px;
+    margin-left: 35%;
+    height: 100vh;
   }
   .wrapper_testimonials{
-    margin: 34px 60px;
+    margin: 43px 60px 43px 60px;
   }
   .container_our_services {
     margin: 0 auto;
@@ -437,6 +486,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+  .container_mas_proyectos {
+    width: 50%;
   }
   .card_project_2 {
     margin: 34px 44px 34px 56px;
@@ -452,14 +505,14 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   .backgroundVideo {
-    height: 53vh;
-    width: 100vw;
+    height: 102vh;
+    width: 102vw;
     display: flex;
 
   }
   .video {
     margin-left: 90%;
-    height: 407px;
+    height: 102vh;
   }
   .leftBlock {
     width: 13vw;
@@ -469,11 +522,20 @@
   }
   .backgroundHover {
     width: 102vw;
+    height: 102vh;
   }
 
   .container_our_services {
     margin: 0 auto;
     width: 60%;
+  }
+  .container_last_projects {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+  .container_sobre_nosotros {
+    margin-right: -28px;
   }
 }
  
