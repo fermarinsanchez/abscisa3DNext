@@ -44,28 +44,28 @@ const NavBar = () => {
             <li className={style.nav__list_item}>Menú</li>
             <li className={style.menuSeparator}></li>
             <li className={style.nav__list_item}>
-              <Link href="">
-                <a onClick={() => closeMenu()} className="menu-item" >Home</a>
+              <Link href="/">
+                <a onClick={() => closeMenu()} className={style.menu_item} >Home</a>
               </Link>
             </li>
-            <li className={style.nav__list_item}>
+            {/* <li className={style.nav__list_item}>
               <Link href="/services" passHref>
-                <a onClick={() => closeMenu()} id="about" className="menu-item" >Servicios</a>
+                <a onClick={() => closeMenu()} id="about" className={style.menu_item} >Servicios</a>
               </Link>
-            </li>
+            </li> */}
             <li className={style.nav__list_item}>
               <Link href="/projects">
-                <a onClick={() => closeMenu()} id="contact" className="menu-item" >Proyectos</a>
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Proyectos</a>
               </Link>
             </li>
             <li className={style.nav__list_item}>
               <Link href="/news">
-                <a onClick={() => closeMenu()} id="contact" className="menu-item" >Noticias</a>
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Noticias</a>
               </Link>
             </li>
             <li className={style.nav__list_item}>
               <Link href="#contacto">
-                <a onClick={() => closeMenu()} id="contact" className="menu-item" >Contacto</a>
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Contacto</a>
               </Link>
             </li>
           </ul>
