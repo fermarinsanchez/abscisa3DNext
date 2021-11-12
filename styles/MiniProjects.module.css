@@ -1,52 +1,135 @@
-.cardItem {
-    position: relative;
-    margin: 0 0 56px 32px;
-    width: 244px;
-    height: 244px;
-    flex-grow: 0;
-    margin: 39px 5px 56px 30px;
+.card_project {
+  width: 252px;
+  height: 300px;
+  flex-grow: 0;
+  margin: 34px 8px 34px 40px;
+  padding: 26px 0 38px 32px;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  transition: 0.3s;
+  position: relative;
 }
 
-.cardTitle {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fffeed;
-    position:absolute;
-    top: 136px;
-    left: 66px;
-    width: 182px;
-    margin: 0;
+.card_project:hover {
+  border: solid 1px var(--yellow);
+  transition: 0.3s;
 }
+
+.card_project_title {
+  margin: 0 20px 0px 0;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.card_project_year {
+  margin: -4px 177px 73px 2px;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #a5a5a5;
+}
+
+.containerImageProject {
+  width: 196px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  right: 0;
+  bottom: 34px;
+}
+
+.containerImageProject>img {
+  width: auto;
+  height: auto;
+  margin-top: -30px;
+}
+
+.card_project {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: 218px;
+}
+
+
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation : landscape) {
- 
-}
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
 
-}
- 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
 
-}
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
 }
- 
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-  /* Styles */
+  .card_project {
+    width: 500px;
+    margin: 5% 5%;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  .enterCard {
+    animation-name: enterCard;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.9, -0.01, 0.97, 0.41);
+  }
+
+  .exitCard {
+    animation-name: exitCard;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.9, -0.01, 0.97, 0.41);
+  }
+
+  .card_project {
+    width: 500px;
+    margin: 5% 5%;
+    height: 500px;
+    cursor: pointer;
+   
+  }
+
+  .containerImageProject {
+    width: 90%;
+    height: 90%;
+    right: -100px;
+    bottom: -72px;
+  }
+
+  .containerImageProject>img {
+    width: 80%;
+    height: 80%;
+  }
 }
- 
+
+@keyframes enterCard {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes exitCard {
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
   /* Styles */

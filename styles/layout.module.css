@@ -1,0 +1,61 @@
+.logo_wrap {
+    position: absolute;
+    padding-left: 28px;
+    display: block;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+}
+
+.logo_wrap a {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.logo_wrap a:hover {
+    opacity: 0.3;
+}
+
+.logo_wrap img {
+    width: 175px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 25px;
+    transition: all 0.3s ease-out;
+}
+
+.logo_wrap img:hover {
+    opacity: 0.8;
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .logo_wrap img {
+       display: none;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .logo_wrap img {
+        width: 120px;
+
+    }
+}

@@ -1,48 +1,160 @@
-.projectsHeader {
-    padding-top: 62px;
-    margin-left: 32px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 42px;
-    font-stretch: normal;
-    font-weight: 300;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #05f0d4;
+.projectsHeader>h5 {
+  margin: 100px 36px 0px 26px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 100;
+  color: var(--white);
+}
+
+.projectsHeader>p {
+  margin: 0px 36px 46px 26px;
 }
 
 .cardsContainer {
-    margin-bottom: 72px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_wrap {
+  display: none;
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation : landscape) {
- 
+  .projectsHeader {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  .cardsContainer {
+    margin-top: 80px;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .cardsContainer {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .projectsHeader {
+    width: 50%;
+    margin-top: 36%;
+    margin-left: 50px;
+    position: fixed;
+  }
 
+  .cardsContainer {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .cardsContainer {
+    width: 100vw;
+    height: auto;
+    margin-left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
- 
+
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
+  .projectsHeader {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 29%;
+    position: fixed;
+    top: -21%;
+  }
 }
+
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1025px) and (orientation : portrait) {
   /* Styles */
 }
- 
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-  /* Styles */
+  .projectsHeader {
+    width: 35%;
+    margin-top: 150px;
+    margin-left: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+
+  .projectsHeader>h5 {
+    margin-bottom: 10px;
+    font-size: 3.5em;
+  }
+
+  .projectsHeader>p {
+    margin-left: 36px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+
+  .cardsContainer {
+    width: 100vw;
+    height: auto;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo_wrap {
+    display: block;
+    width: 160px;
+    margin-top: 56px;
+    margin-left: 56px;
+    cursor: pointer;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
 }
- 
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
   /* Styles */
 }
-
-
