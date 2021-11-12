@@ -31,6 +31,12 @@
     transition: 0.9s;
 }
 
+.container_contacto p:hover {
+    text-decoration: none;
+    color: #05f0d4;
+    transition: 0.9s;
+}
+
 .container_contacto svg {
     padding-right: 16px;
     margin: 0 0 26px 0;
@@ -47,7 +53,22 @@
     text-align: left;
     color: var(--green);
     margin: 0 0 26px 0;
+    color: #a5a5a5;
 }
+
+.container_contacto p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #05f0d4;
+    transition: width .3s ease-in-out;
+    margin-top: 5px;
+  }
+  
+  .container_contacto p:hover::after {
+    width: 100%;
+  }
 
 .container_siguenos {
     margin: 20px 17.1px 20px 36px;
@@ -60,6 +81,12 @@
     letter-spacing: normal;
     text-align: left;
     color: #a5a5a5;
+}
+
+.container_siguenos a {
+    text-decoration: none;
+    color: #a5a5a5;
+    transition: 0.9s;
 }
 
 .container_siguenos a {
@@ -88,13 +115,14 @@
     letter-spacing: normal;
     text-align: left;
     color: #a5a5a5;
+    cursor: pointer;
 }
 
 .container_paginas a {
     text-decoration: none;
     color: #a5a5a5;
 }
-.container_paginas a:hover {
+.container_paginas p:hover {
     color: #05f0d4;
     transition: 0.9s;
 }
