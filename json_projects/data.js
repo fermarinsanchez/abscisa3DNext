@@ -1,115 +1,127 @@
 export const data = [
     {
-        "id": 0,
-        "name":"Estrella de Montiel",
-        "img":"images/image-2.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Montiel (Toledo)",
-        "year": 2020,
-        "technologies":["Escaner 3D", "Laser total", "PlayStation 5"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-        
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-    },
-    {
         "id": 1,
-        "name":"Puente San Martín",
-        "img":"images/Rectangle-16.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Cajco Antiguo(Toledo)",
-        "year": 2021,
-        "technologies":["Escaner 4D", "Laser mortal", "XBOX series X"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
+        "slug": "corral-almagro",
+        "name":"Corral Almagro",
+        "img":"https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967234/Corral%20Almagro/Imagenes/Captura7_rf27yc.jpg",
+        "alt":"Corral de comedias de Almagro",
+        "gallery": [
+            {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967240/Corral%20Almagro/Imagenes/rtc360-abscisa3d-vr_2_qbhsrz.jpg",
+                number: 1,
+                caption: "Corral de comedias de Almagro",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967238/Corral%20Almagro/Imagenes/Abscisa3d-reconstruccio%CC%81nvr_1_b8v7fe.png",
+                number: 2,
+                caption: "Corral de comedias de Almagro",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967234/Corral%20Almagro/Imagenes/View_4_qzwqps.png",
+                number: 3,
+                caption: "Corral de comedias de Almagro",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967234/Corral%20Almagro/Imagenes/Captura4_gmshjd.jpg",
+                number: 4,
+                caption: "Corral de comedias de Almagro",
+              },
+            ],
+        "location": "Corral de Comedias de Almagro (Ciudad Real)",
+        "year": 2020,
+        "technologies":["Láser Escáner RTC 360", "Cyclone Core", "Cyclone 3dr"],
+        "team" : ["Paula Noriega Fernández, Ingeniera Técnica en Topografía", "Javier Pérez López-Triviño, Fotógrafo", "Javier García, Arqueólogo"],
+        "work": ["24 escaneos"],
+        "entrega": ["Nube de puntos", "Planos en planta formato CAD", "Secciones formato CAD", "Fotografía 360º", "TruView"],
+        "description": [`El Corral de Comedias de Almagro es conocido en todo el mundo por ser el único que permanece activo tal y como era hace casi cuatrocientos años. Está situado en la Plaza Mayor de Almagro y debe su construcción a Leonardo de Oviedo. La primera representación de la que se tiene referencia fue a cargo de la compañía de Juan Martínez en 1629, una de las doce compañías “de título”.
+        `, `Nosotros hemos realizado el escaneado del mismo con el láser escáner RTC360 de Leica Geosystems.`],
+        "video": null,
+        "pdf3D": null,
+        "sketchFab": "https://skfb.ly/orqZG",
+        "downloadbleProject": null,
     },
     {
         "id": 2,
-        "name":"Estrella de Montiel",
-        "img":"images/image-2.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Montiel de la Sierra (Toledo)",
+        "slug": "campanile-atocha",
+        "name":"Campanile Atocha",
+        "img":"https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967226/Campanile%20Atocha/Campanille_Atocha_3d_brc37h.jpg",
+        "alt":"Campanile Atocha",
+        "gallery": [
+            {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967227/Campanile%20Atocha/ESTRUCTURA_pf1hbq.jpg",
+                number: 1,
+                caption: "caption text",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967226/Campanile%20Atocha/IMAGEN1_uzs1ze.jpg",
+                number: 2,
+                caption: "caption text",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967226/Campanile%20Atocha/Campanille_Atocha_uwfxsb.jpg",
+                number: 3,
+                caption: "caption text",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967226/Campanile%20Atocha/3_qzaxrv.jpg",
+                number: 4,
+                caption: "caption text",
+              },
+            ],
+        "location": "Estación de Atocha (Madrid)",
         "year": 2020,
-        "technologies":["Escaner 3D", "Laser total", "PlayStation 5"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
+        "technologies":["Láser Escáner RTC 360", "Cyclone Core", "Autocad", "Revit"],
+        "team" : ["Paula Noriega Fernández, Ingeniera Técnica en Topografía", "Javier Pérez López-Triviño, Fotógrafo"],
+        "work": ["92 escaneos", "100 millones de puntos", "1 día de trabajo de campo", "5 días de trabajo de oficina"],
+        "entrega": ["Nube de puntos", "Planos en planta formato CAD", "Secciones formato CAD", "Fotografía 360º", "TruView"],
+        "description": [`Campanile de Atocha, pertenece al Panteón de Hombres Ilustres, que estaría unido a él mediante una basílica que nunca se llegó a construir, hoy forma parte de un colegio construido en 1960.
+        `, `Es necesario tener los planos digitalizados de la torre y conocer el estado actual del mismo. Se decidió trabajar con láser escáner RTC360, hemos escaneado el interior y el exterior del edificio. `],
+        "video": null,
+        "pdf3D": null,
+        "sketchFab": null,
+        "trueView": "https://drive.google.com/drive/folders/1fdTdMimRH5Uk1hawGhDro9jsnNSfLMuh",
+        "downloadbleProject": null,
     },
     {
         "id": 3,
-        "name":"Puente San Martín",
-        "img":"images/Rectangle-16.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Cajco Antiguo (Toledo)",
-        "year": 2021,
-        "technologies":["Escaner 4D", "Laser mortal", "XBOX series X"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-    },  
-    {
-        "id": 4,
-        "name":"Estrella de Montiel",
-        "img":"images/image-2.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Montiel (Toledo)",
+        "slug": "monasterio-ucles",
+        "name":"Monasterio Uclés",
+        "img":"https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967246/Monasterio%20de%20Ucle%CC%81s/Imagenes/1_cb6nbu.jpg",
+        "alt":"Monasterio de Uclés",
+        "gallery": [
+            {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967245/Monasterio%20de%20Ucle%CC%81s/Imagenes/WhatsApp_Image_2021-09-29_at_11.06.00_1_bnrpsx.jpg",
+                number: 1,
+                caption: "Monasterio de Uclés",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967246/Monasterio%20de%20Ucle%CC%81s/Imagenes/1_cb6nbu.jpg",
+                number: 2,
+                caption: "Monasterio de Uclés",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967245/Monasterio%20de%20Ucle%CC%81s/Imagenes/WhatsApp_Image_2021-09-29_at_11.06.00_nuibki.jpg",
+                number: 3,
+                caption: "Monasterio de Uclés",
+              },
+              {
+                photo: "https://res.cloudinary.com/dci5hxl4x/image/upload/v1637967245/Monasterio%20de%20Ucle%CC%81s/Imagenes/artesonado_video_mapping_ibasam.jpg",
+                number: 4,
+                caption: "Monasterio de Uclés",
+              },
+            ],
+        "location": "Monasterio de Uclés (Cuenca)",
         "year": 2020,
-        "technologies":["Escaner 3D", "Laser total", "PlayStation 5"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-        
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
+        "technologies":["Láser Escáner RTC 360", "Cyclone Core", "Revit", "Autocad", "SketchUp"],
+        "team" : ["Paula Noriega Fernández, Ingeniera Técnica en Topografía", "Javier Pérez López-Triviño, Fotógrafo", "Héctor Tena Rolanía, Ingeniero de Edificación"],
+        "work": ["800 Escaneos", "Más de 10000 millones de puntos", "2 semanas de trabajo de campo"],
+        "entrega": ["Planos en planta formato CAD", "Secciones en formato CAD", "Fotografía 360º", "Modelo 3d SketchUp", "Integración en formato BIM", "TruView"],
+        "description": [`El monasterio formaba parte de un conjunto de fortificaciones que tuvo  sus orígenes en la dominación musulmana de la Península Ibérica. Tras su reconquista por los cristianos fue donado por el rey Alfonso VIII a la Orden de Santiago.`, `La Fundación Fernando Núñez nos encarga el trabajo de capturar el interior y el exterior del edificio y tener toda la documentación del estado actual y poder trabajar con ella, dependiendo de las necesidades de cada momento.`],
+        "video": "https://res.cloudinary.com/dci5hxl4x/video/upload/v1638651751/Monasterio%20de%20Ucle%CC%81s/Imagenes/Rtc360_3D_Bim-1-red_ldlchi.mp4",
+        "pdf3D": null,
+        "sketchFab": "https://skfb.ly/orqZG",
+        "downloadbleProject": null,
     },
-    {
-        "id": 5,
-        "name":"Puente San Martín",
-        "img":"images/Rectangle-16.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Cajco Antiguo(Toledo)",
-        "year": 2021,
-        "technologies":["Escaner 4D", "Laser mortal", "XBOX series X"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-    },
-    {
-        "id": 6,
-        "name":"Estrella de Montiel",
-        "img":"images/image-2.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Montiel de la Sierra (Toledo)",
-        "year": 2020,
-        "technologies":["Escaner 3D", "Laser total", "PlayStation 5"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-    },
-    {
-        "id": 7,
-        "name":"Puente San Martín",
-        "img":"images/Rectangle-16.jpg",
-        "alt":"descripción de la imagen",
-        "location": "Cajco Antiguo (Toledo)",
-        "year": 2021,
-        "technologies":["Escaner 4D", "Laser mortal", "XBOX series X"],
-        "description": `Abscisa son grandes profesionales y de una gran confianza que hacer que cada trabajo sea unico.
-         
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-    },  
+    
 ];
 

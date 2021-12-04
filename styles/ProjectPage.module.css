@@ -1,16 +1,11 @@
 .topHeader {
     width: 297px;
     height: 114px;
-    margin: 132px 0 0px 23px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+    margin: 132px 36px 0px 36px;
+    font-size: 30px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
-    color: #05f0d4;
+    color: var(--white);
 }
 
 .containerPhotos {
@@ -19,9 +14,48 @@
     margin-bottom: 24px;
 }
 
-.containerSketchFab {
-    /* width: 100%; */
+.galleryGrid {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.galleryGrid img {
+    width: 100vw;
+}
+
+.imgRow_1 img {
+    width: 100vw;
+}
+
+.imgRow_2 img {
+    width: 100vw;
+}
+
+.imgRow_3 {
+    display: flex;
+    height: 250px;
+}
+
+.imgRow_3 img {
+    width: 50vw;
+}
+.imgRow_31 {
+    width: 45%;
+} 
+
+.imgRow_32 {
+    width: 45%;
+} 
+
+.imgRow_32 img {
+    width: 215%;
+    overflow: hidden;
+    padding-left: 30px;
+} 
+
+
 
 .firstCP {
     width: 262px;
@@ -71,31 +105,40 @@
     margin: 0 32px 32px 23px;
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation : landscape) {
- 
+.logo_wrap {
+    display: none;
 }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
 
-}
- 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
 
-}
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  /* Styles */
+    /* Styles */
 }
- 
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-  /* Styles */
+    .logo_wrap {
+        display: block;
+        width: 160px;
+        margin-top: 56px;
+        margin-left: 56px;
+        cursor: pointer;
+    }
+
+    .containerPhotos {
+        width: 50%;
+    }
 }
- 
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
-  /* Styles */
+    /* Styles */
 }

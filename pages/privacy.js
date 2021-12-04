@@ -16,7 +16,7 @@ const Privacy = () => {
                 <p>DERECHO DE EXCLUSIÓN: ABSCISA Ingeniería Geomática y Topográfica se reserva el derecho a denegar o retirar el acceso a portal y/o los servicios ofrecidos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las presentes Condiciones Generales de Uso.</p>
                 <p>GENERALIDADES: ABSCISA Ingeniería Geomática y Topográfica perseguirá el incumplimiento de las presentes condiciones así como cualquier utilización indebida de su portal ejerciendo todas las acciones civiles y penales que le puedan corresponder en derecho.</p>
                 <p>MODIFICACIÓN DE LAS PRESENTES CONDICIONES Y DURACIÓN: ABSCISA Ingeniería Geomática y Topográfica podrá modificar en cualquier momento las condiciones aquí determinadas, siendo debidamente publicadas como aquí aparecen. La vigencia de las citadas condiciones irá en función de su exposición y estarán vigentes hasta que sean modificadas por otras debidamente publicadas.</p>
-                <p>LEGISLACIÓN APLICABLE Y JURISDICCIÓN: La relación entre ABSCISA Ingeniería Geomática y Topográfica y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tri</p>
+                <p>LEGISLACIÓN APLICABLE Y JURISDICCIÓN: La relación entre ABSCISA Ingeniería Geomática y Topográfica y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados</p>
             </div>
         </>
     )

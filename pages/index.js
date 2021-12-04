@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import style from '../styles/Home.module.css'
 import { data } from '../json_projects/data'
-import { useInView } from 'react-intersection-observer';
+import { useInView, InView } from 'react-intersection-observer';
 import Cube from '../components/Cube/Cube'
 
 export const getStaticProps = async () => {
@@ -75,7 +75,7 @@ const Home = ({ projects }) => {
         </div>
       </section>
       <section className={style.wrapper_testimonials}>
-        <inView>
+        <InView>
           <svg data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 84 84" style={{ transform: `translateX(${offset * 0.09}px)` }} className={style.stringsUp}
           >
             <g clipPath="url(#clip0)">
@@ -88,7 +88,7 @@ const Home = ({ projects }) => {
               </clipPath>
             </defs>
           </svg>
-        </inView>
+        </InView>
         <div className={style.container_testimonial}>
           <h3>Abscisa revisa el entorno</h3>
           <h4>EL PAÍS</h4>
@@ -104,7 +104,7 @@ const Home = ({ projects }) => {
           <h4>EL PAÍS</h4>
           <p>Entrevistamos a la CEO de Abscisa en nuestro artículo semanal.</p>
         </div>
-        <inView>
+        <InView>
           <svg data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" xmlns="http://www.w3.org/2000/svg" width="98" height="62" fill="none" viewBox="0 0 98 62" style={{ transform: `translateX(${offset * -0.09}px)` }} className={style.stringsDown} >
             <g clipPath="url(#clip0)">
               <path fill="#181919" d="M0 0H360V7585H0z" transform="translate(-135 -1112)" />
@@ -116,7 +116,7 @@ const Home = ({ projects }) => {
               </clipPath>
             </defs>
           </svg>
-        </inView>
+        </InView>
       </section>
       <section id="nuestros_servicios" className={style.proyectsSectionContainer}>
         {/* <div className={style.container_our_services}>
@@ -144,26 +144,26 @@ const Home = ({ projects }) => {
               <h5 className={style.card_project_title}>{projects[0].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <img src={`/${projects[0].img}`} alt="card image mocked" />
+                <img src={`${projects[0].img}`} alt="card image mocked" />
               </div>
             </div>
           </Link>
           <Link href={`/projects/${projects[1].id}`} passHref>
             <div className={style.card_project_2}>
-              <h5 className={style.card_project_title}>Torre Norte</h5>
+              <h5 className={style.card_project_title}>{projects[1].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <img src={`/${projects[1].img}`} alt="card image mocked" />
+                <img src={`${projects[1].img}`} alt="card image mocked" />
               </div>
             </div>
           </Link>
 
           <Link href={`/projects/${projects[2].id}`} passHref>
             <div className={style.card_project_3}>
-              <h5 className={style.card_project_title}>Torre Norte</h5>
+              <h5 className={style.card_project_title}>{projects[2].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <Image src="/images/card-mock-image.png" width={500} height={300} alt="card image mocked" />
+                <img src={`${projects[2].img}`} alt="card image mocked" />
 
               </div>
             </div>
@@ -193,7 +193,7 @@ const Home = ({ projects }) => {
               <p className={style.sobre_nosotros_text_1} >Somos un estudio especializado en proyectos de nubes de puntos, modelados y BIM.</p>
               <p className={style.sobre_nosotros_text_2}>Capturamos la realidad para transformarla en un entorno digital.</p>
             </div>
-            <inView>
+            <InView>
               <div className={style.cube} style={{ transform: inView && `translateX(${(offset * -0.25) +500}px)` }}>
                 <Cube />
               </div>
@@ -201,7 +201,7 @@ const Home = ({ projects }) => {
               <div className={style.cubeMobile} style={{ transform: inView && `translateX(${(offset * -0.25) +800}px)` }}>
                 <Cube />
               </div>
-            </inView>
+            </InView>
           </div>
           <h5 id='equipo'>Equipo</h5>
           <div

@@ -1,6 +1,7 @@
 import { data } from '../../json_projects/data'
+import { useState } from 'react';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 import Link from 'next/link'
-import Image from 'next/image'
 import style from '../../styles/ProjectPage.module.css'
 
 export const getStaticProps = async ({ params }) => {
@@ -19,81 +20,83 @@ export const getStaticPaths = async () => {
     return { paths, fallback: false }
 }
 
-const ProjectPage = ({ project }) => (
-    <>
-        <section>
-            <p className={style.topHeader}>
-                {project.name}
-            </p>
-            <div className={style.containerPhotos}>
-                <div className={style.firstCP}>
-                    <Image
-                        src={`/${project.img}`}
-                        alt={`project.alt`}
-                        width={262}
-                        height={230}
-                        objectFit='cover'
-                    />
-                </div>
-                <div className={style.secondCP}>
-                    <Image
-                        src={`/${project.img}`}
-                        alt={`project.alt`}
-                        width={262}
-                        height={120}
-                        objectFit='cover'
-                    />
-                </div>
-                <div className={style.thirdCP}>
-                    <Image
-                        src={`/${project.img}`}
-                        alt={`project.alt`}
-                        width={123}
-                        height={120}
-                        objectFit='cover'
-                    />
-                    <Image
-                        src={`/${project.img}`}
-                        alt={`project.alt`}
-                        width={123}
-                        height={120}
-                        objectFit='cover'
-                    />
-                </div>
-                <div className={style.containerSketchFab}>
-                    <div class="sketchfab-embed-wrapper"> <iframe title="Dead Sea Qumran" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/bf4bd5df05134faea2c86bc85cb90a3d/embed?ui_theme=dark"  > </iframe> </div>
-                </div>
-            </div>
-            <div className={style.containerData}>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><p>Localización:</p></td>
-                            <td><p>{project.location}</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>Año:</p></td>
-                            <td><p>{project.year}</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>Tecnologías:</p></td>
-                            <td>
+const ProjectPage = ({ project }) => {
 
-                                {project.technologies.map((tech, index) =>
-                                    <p key={index}>{tech}</p>
-                                )}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div className={style.projectDescription}>
-                <p>
-                    {project.description}
-                </p>
-            </div>
-        </section>
-    </>
-)
+    const [isOpen, setIsOpen] = useState(true);
+
+    return (
+        <>
+            <section>
+                <div className={style.logo_wrap}>
+                    <Link href="/">
+                        <a>
+                            <img
+                                src='/images/logo-abscisa-vector.svg'
+                                alt='abscisa3d logo'
+                            />
+                        </a>
+                    </Link>
+                </div>
+                <h5 className={style.topHeader}>
+                    {project.name}
+                </h5>
+                <div className={style.containerPhotos}>
+                    <div className={style.gallery}>
+
+                        <SimpleReactLightbox>
+                            <SRLWrapper>
+                                <div className={style.galleryGrid}>
+                                    <div className={style.imgRow_1}>
+                                        <img src={project.gallery[1].photo} alt={project.gallery[1].caption} />
+                                    </div>
+                                    <div className={style.imgRow_2}>
+                                        <img src={project.gallery[0].photo} alt={project.gallery[0].caption} />
+                                    </div>
+                                    <div className={style.imgRow_3}>
+                                        <div className={style.imgRow_31}>
+                                            <img src={project.gallery[2].photo} alt={project.gallery[2].caption} />
+                                        </div>
+                                        <div className={style.imgRow_32}>
+                                            <img src={project.gallery[3].photo} alt={project.gallery[3].caption} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </SRLWrapper>
+                        </SimpleReactLightbox>
+                    </div>
+                   
+                </div>
+                <div className={style.containerData}>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><p>Localización:</p></td>
+                                <td><p>{project.location}</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Año:</p></td>
+                                <td><p>{project.year}</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Tecnologías:</p></td>
+                                <td>
+
+                                    {project.technologies.map((tech, index) =>
+                                        <p key={index}>{tech}</p>
+                                    )}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className={style.projectDescription}>
+                    <p>
+                        {project.description}
+                    </p>
+                </div>
+            </section>
+        </>
+    )
+}
 
 export default ProjectPage;

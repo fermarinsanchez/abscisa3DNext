@@ -12,10 +12,6 @@ export const getStaticProps = async () => {
     }
 }
 
-
-
-
-
 const Proyectos = ({ projects }) => {
 
 const [offset, setOffset] = useState(0)

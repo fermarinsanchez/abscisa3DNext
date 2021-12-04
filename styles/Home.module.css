@@ -303,8 +303,8 @@
 }
 
 .containerImageProject {
-  width: 218px;
-  height: 110px;
+  width: 250px;
+  height: 154px;
   overflow: hidden;
   border-radius: 4px 0 0 4px;
   position: absolute;
@@ -318,7 +318,7 @@
   box-sizing: border-box;
   display: block;
   overflow: hidden;
-  width: 218px;
+  width: 252px;
 }
 
 .container_mas_proyectos {
@@ -900,15 +900,15 @@
   }
 
   .containerImageProject {
-    width: 300px;
-    height: 220px;
+    width: 353px;
+    height: 233px;
   }
 
   .card_project_1 img,
   .card_project_2 img,
   .card_project_3 img,
   .card_project_4 img {
-    width: 318px;
+    width: 353px;
   }
 
   .equipo_cards {
