@@ -8,9 +8,10 @@
   top: 36px;
   right: 36px;
   z-index: 9;
-  cursor:pointer;
-  
+  cursor: pointer;
+
 }
+
 .nav__container {
   position: fixed;
   top: 30px;
@@ -21,7 +22,7 @@
   border-radius: 4px;
   z-index: 9;
   animation: menu 0.3s ease-in-out;
-  
+
 }
 
 .menu_item::after {
@@ -29,7 +30,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #ffef34;
+  background: #05F0D4;
   transition: width .3s;
   margin-top: 5px;
 }
@@ -47,15 +48,15 @@
 }
 
 .nav__list li:first-child {
-  margin: 20px 0 0 30px;
+  margin: 16px 0 4px 30px;
 }
 
 .nav__list li:last-child {
   padding-bottom: 41px;
 }
 
-.menuSeparator{
-  border-bottom: 1px solid #05F0D4;
+.menuSeparator {
+  border-bottom: 1px solid #ffef34;
   margin-right: 30px;
   margin-bottom: 10px;
   display: block !important;
@@ -83,46 +84,168 @@
 
 .nav__list_item a:hover {
   text-decoration: none;
-  color: #ffef34;
+  color: #05F0D4;
   transition: 0.9s;
+}
+.iconos {
+  display: none;
 }
 
 @keyframes menu {
-  from{opacity: 0;}
-  to{opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation : landscape) {
- 
-}
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
 
-}
- 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
 
-}
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
 }
- 
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
   .svgMenuClose {
     width: 30px;
     height: 30px;
   }
+
+  .nav__container {
+    width: 388px;
+    height: 557px;
+  }
+
+  .menu_item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #05F0D4;
+    transition: width .3s;
+    margin-top: 5px;
+  }
+
+  .menu_item:hover::after {
+    width: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav__list li:first-child {
+    margin: 20px 0 6px 30px;
+  }
+
+  .nav__list li:last-child {
+    padding-bottom: 20px;
+  }
+
+  .menuSeparator {
+    border-bottom: 1px solid #ffef34;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    display: block !important;
+  }
+
+  .nav__list li {
+    font-size: 30px;
+    padding-top: 36px;
+    display: inline-block;
+  }
+
+  .nav__list_item a {
+    display: inline-block;
+  }
+
+  .iconos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .footerIcon {
+    width: 32px;
+    margin-bottom: 40px;
+  }
+
+  .email {
+    padding-top: 8px;
+    width: 32px;
+  }
+
+  .email:hover {
+    filter: opacity(0.7);
+    color: var(--green)!important;
+  }
+  .email::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #05F0D4;
+    transition: width .3s;
+    margin-top: 5px;
+  }
+  .email:hover::after {
+    width: 100%;
+  }
+
+
+
+  .tel:hover {
+    filter: opacity(0.7);
+    color: var(--green)!important;
+  }
+  .tel::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #05F0D4;
+    transition: width .3s;
+    margin-top: 5px;
+  }
+  .tel:hover::after {
+    width: 100%;
+  }
+
+  .whatsapp:hover {
+    filter: opacity(0.7);
+    color: var(--green)!important;
+  }
+  .whatsapp::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #05F0D4;
+    transition: width .3s;
+    margin-top: 5px;
+  }
+  .whatsapp:hover::after {
+    width: 100%;
+  }
+  
+
 }
- 
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
   /* Styles */
 }
-
-
-

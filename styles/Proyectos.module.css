@@ -110,7 +110,7 @@
   .projectsHeader {
     width: 35%;
     margin-top: 150px;
-    margin-left: 50px;
+    margin-left: 300px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -131,11 +131,12 @@
     width: 100vw;
     height: auto;
     margin-left: 25%;
+    margin-right: 18%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column ;
     justify-content: center;
-    align-items: center;
+    align-items: end;
   }
 
   .logo_wrap {

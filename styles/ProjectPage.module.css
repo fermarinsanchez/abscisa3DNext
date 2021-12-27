@@ -1,11 +1,34 @@
 .topHeader {
     width: 297px;
     height: 114px;
-    margin: 132px 36px 0px 36px;
+    margin: 132px 36px -52px 21px;
     font-size: 30px;
     font-weight: 300;
     text-align: left;
     color: var(--white);
+}
+
+.imgDestView {
+    width: 265px;
+    height: 265px;
+    margin-left: 21px;
+}
+.imgDestShadow {
+    display: none;
+}
+
+.pTitle {
+    width: 297px;
+    height: 114px;
+    margin: 100px 36px 40px 21px;
+}
+
+.pTitle>h5 {
+    font-size: 30px;
+    text-align: left;
+    color: var(--green);
+    font-family: 'Oswald';
+    font-weight: 200;
 }
 
 .containerPhotos {
@@ -15,47 +38,16 @@
 }
 
 .galleryGrid {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .galleryGrid img {
-    width: 100vw;
+    width: 90vw;
+    margin-bottom: 16px;
 }
-
-.imgRow_1 img {
-    width: 100vw;
-}
-
-.imgRow_2 img {
-    width: 100vw;
-}
-
-.imgRow_3 {
-    display: flex;
-    height: 250px;
-}
-
-.imgRow_3 img {
-    width: 50vw;
-}
-.imgRow_31 {
-    width: 45%;
-} 
-
-.imgRow_32 {
-    width: 45%;
-} 
-
-.imgRow_32 img {
-    width: 215%;
-    overflow: hidden;
-    padding-left: 30px;
-} 
-
-
 
 .firstCP {
     width: 262px;
@@ -80,6 +72,7 @@
 
 .containerData {
     margin: 0 0px 32px 23px;
+    font-size: 16px;
 }
 
 .containerData li {
@@ -103,17 +96,126 @@
 
 .projectDescription p {
     margin: 0 32px 32px 23px;
+    font-size: 16px;
 }
 
 .logo_wrap {
     display: none;
 }
 
+.containerSketchFab {
+    width: 94%;
+}
+
+.sketchFab {
+    width: 100%;
+    height: 230px;
+}
+
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation : landscape) {}
+@media only screen and (min-width : 321px) and (orientation : landscape) {
+    .projectHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        margin-top: 120px;
+    }
+
+    .imgDestView {
+        width: 265px;
+        height: 265px;
+        margin-left: 0px;
+    }
+    .imgDestShadow {
+        display: none;
+    }
+
+    .topHeader {
+        width: auto;
+        height: 114px;
+        font-size: 42px;
+    }
+
+    .pTitle {
+        width: auto;
+        height: auto;
+    }
+
+    .projectDescription p {
+        margin: 0 10% 32px 10%;
+        font-size: 16px;
+    }
+
+    .containerData {
+        margin: 80px 0px 32px 23px;
+        font-size: 16px;
+    }
+
+    .containerSketchFab {
+        width: 100%;
+    }
+
+    .sketchFab {
+        width: 100%;
+        height: 250px;
+    }
+}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .projectHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 120px;
+    }
+    .containerTopHeader {
+        width: 50%;
+    }
+    .imgDest{
+        width: 50%;
+    }
+
+    .imgDestView {
+        width: 265px;
+        height: 265px;
+        margin-left: 0px;
+    }
+    .imgDestShadow {
+        display: none;
+    }
+
+    .topHeader {
+        width: auto;
+        height: 114px;
+        font-size: 42px;
+    }
+
+    .pTitle {
+        width: auto;
+        height: auto;
+    }
+
+    .projectDescription p {
+        margin: 0 10% 32px 10%;
+        font-size: 16px;
+    }
+
+    .containerData {
+        margin: 80px 0px 32px 23px;
+        font-size: 16px;
+    }
+
+    .containerSketchFab {
+        width: 94%;
+    }
+
+    .sketchFab {
+        width: 99%;
+        height: 430px;
+    }
+}
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
@@ -136,7 +238,106 @@
     .containerPhotos {
         width: 50%;
     }
+
+    .section {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .projectHeader {
+        padding-bottom: 9vh;
+        min-height: 50vh;
+        align-items: end;
+    }
+    .containerTopHeader {
+        width: 50%;
+    }
+
+    .topHeader {
+        font-size: 6.5em;
+        line-height: 1.1em;
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    .imgDest {
+        position: relative;
+        margin-left: 12em;
+    }
+
+    .imgDestView {
+        height: 400px;
+        width: 400px;
+    }
+
+    .imgDestShadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        height: 400px;
+        width: 400px;
+        z-index: -1;
+        opacity: 0.5;
+        filter: blur(100px);
+    }
+    
+    .dataAndGallery {
+        margin-top: 14em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containerData {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 32px 200px;
+    }
+    .containerPhotos {
+        width: 100%;
+    }
+
+    .galleryGrid {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .galleryGrid img {
+     width: 50%;
+     filter: brightness(0.6);
+     transition: all 0.2s ease-in-out;
+    }
+    .galleryGrid img:hover {
+        z-index: 1;
+        transform: translateZ(0) scale(1.2);
+        filter: brightness(1);
+        transition: all 0.2s ease-in-out;
+    }
+    .photoContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .containerSketchFab {
+        display: flex;
+        justify-content: center;
+        filter: brightness(0.6);
+        width: 50%;
+        transition: all 0.2s ease-in-out;
+    }
+    .containerSketchFab:hover {
+        z-index: 1;
+        transform: translateZ(0) scale(1.2);
+        filter: brightness(1);
+        transition: all 0.2s ease-in-out;
+    }
 }
+
+
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {

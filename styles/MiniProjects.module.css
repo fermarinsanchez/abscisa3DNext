@@ -70,10 +70,35 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+
+  .card_project_title {
+    margin: 26px 20px 0px 6px;
+  }
+
+  .card_project_year {
+    margin-left: 6px;
+  }
+
+
+  .containerImageProject {
+    width: 368px;
+    height: 184px;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    right: 0;
+    bottom: 34px;
+  }
+
+  .containerImageProject>img {
+
+    margin-top: -30px;
+  }
+
   .card_project {
-    width: 500px;
+    width: 420px;
+    height: 420px;
     margin: 5% 5%;
-    height: 500px;
     cursor: pointer;
   }
 
@@ -90,23 +115,27 @@
   }
 
   .card_project {
-    width: 500px;
+    width: 420px;
     margin: 5% 5%;
-    height: 500px;
+    height: 420px;
     cursor: pointer;
-   
+
   }
 
   .containerImageProject {
+    display: flex;
     width: 90%;
     height: 90%;
-    right: -100px;
-    bottom: -72px;
+    right: 0px;
+    top: 84px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   .containerImageProject>img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    border-radius: 4px;
   }
 }
 
