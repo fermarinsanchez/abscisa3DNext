@@ -1,8 +1,8 @@
 .topHeader {
     width: 297px;
-    margin: 132px 36px 0px 36px;
+    margin: 132px 36px -26px 36px;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     color: var(--white);
 }

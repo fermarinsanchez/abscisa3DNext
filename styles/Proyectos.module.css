@@ -1,13 +1,15 @@
 .projectsHeader>h5 {
-  margin: 100px 36px 0px 26px;
+  margin: 132px 36px 36px 36px;
   font-size: 30px;
   text-align: left;
-  font-weight: 100;
   color: var(--white);
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .projectsHeader>p {
-  margin: 0px 36px 46px 26px;
+  margin: 0px 36px 46px 36px;
+  font-size: 16px;
 }
 
 .cardsContainer {
@@ -94,9 +96,12 @@
   .projectsHeader {
     width: 50%;
     margin-left: 50px;
-    margin-top: 29%;
+    margin-top: 19%;
     position: fixed;
     top: -21%;
+  }
+  .projectsHeader>h5 {
+    margin-top: 120px;
   }
 }
 

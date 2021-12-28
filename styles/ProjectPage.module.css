@@ -1,7 +1,7 @@
 .topHeader {
     width: 297px;
     height: 114px;
-    margin: 132px 36px -52px 21px;
+    margin: 132px 36px 0px 36px;
     font-size: 30px;
     font-weight: 300;
     text-align: left;
@@ -11,7 +11,7 @@
 .imgDestView {
     width: 265px;
     height: 265px;
-    margin-left: 21px;
+    margin-left: 36px;
 }
 .imgDestShadow {
     display: none;
@@ -121,10 +121,14 @@
         margin-top: 120px;
     }
 
+    .topHeader {
+        margin: 132px 36px -49px 36px;
+    }
+
     .imgDestView {
         width: 265px;
         height: 265px;
-        margin-left: 0px;
+        margin-left: 36px;
     }
     .imgDestShadow {
         display: none;
@@ -139,6 +143,7 @@
     .pTitle {
         width: auto;
         height: auto;
+        margin-left: 36px;
     }
 
     .projectDescription p {
@@ -147,17 +152,17 @@
     }
 
     .containerData {
-        margin: 80px 0px 32px 23px;
+        margin: 80px 0px 32px px;
         font-size: 16px;
     }
 
     .containerSketchFab {
-        width: 100%;
+        width: 92%;
     }
 
     .sketchFab {
         width: 100%;
-        height: 250px;
+        height: 90vh;
     }
 }
 
@@ -170,6 +175,7 @@
         align-items: baseline;
         margin-top: 120px;
     }
+    
     .containerTopHeader {
         width: 50%;
     }
@@ -207,18 +213,51 @@
         font-size: 16px;
     }
 
-    .containerSketchFab {
-        width: 94%;
-    }
-
     .sketchFab {
         width: 99%;
-        height: 430px;
+        height: 390px;
     }
 }
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .imgDest {
+        position: relative;
+        margin-left: 12em;
+    }
+    .imgDestShadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 265px;
+        height: 265px;
+        z-index: -1;
+        opacity: 0.5;
+        filter: blur(100px);
+    }
+     .topHeader {
+         margin-left: 81px;
+     }
+
+     .pTitle>h5 {
+         margin-left: 50px;
+     }
+
+     .projectDescription {
+        margin-left: 130px;
+     }
+
+     .containerData {
+         margin-left: 81px;
+     }
+
+     .sketchFab {
+        width: 100%;
+        height: 520px;
+    }
+     
+}
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -257,7 +296,7 @@
         font-size: 6.5em;
         line-height: 1.1em;
         width: 50%;
-        margin-top: 0px;
+        margin: 97px 36px 100px 36px;
     }
 
     .imgDest {
@@ -291,7 +330,7 @@
     .containerData {
         width: 50%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         margin: 0px 0px 32px 200px;
     }
@@ -334,6 +373,10 @@
         transform: translateZ(0) scale(1.2);
         filter: brightness(1);
         transition: all 0.2s ease-in-out;
+    }
+    .sketchFab {
+        width: 100%;
+        height: 300px;
     }
 }
 
