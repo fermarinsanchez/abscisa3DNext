@@ -1,71 +1,92 @@
 .topHeader {
-    width: 297px;
-    margin: 132px 36px -26px 36px;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: left;
-    color: var(--white);
+  width: 297px;
+  margin: 132px 36px -26px 36px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  color: var(--white);
 }
 
 .wrapper_testimonials {
 
-    margin: 60px 36px 34px 36px;
-  }
-  
-  .container_testimonial {
-    margin-bottom: 50px;
-  }
-  
-  .container_testimonial h3 {
-    text-align: left;
-    color: var(--white);
-    font-size: 20px;
-    margin-bottom: 8px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-  }
-  
-  .container_testimonial h4 {
-    text-align: left;
-    color: #A5A5A5;
-    font-weight: 100;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 12px;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  .container_testimonial p {
-    text-align: left;
-    color: var(--white);
-    font-size: 16px;
-    margin-top: 0px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  
-  .container_testimonial h6 {
-    text-align: center;
-    color: var(--green);
-    font-size: 14px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .leerMas {
-    color: var(--green) !important;
-    font-size: 20px !important;
-    font-family: 'Oswald', sans-serif !important;
-  }
-  
-  .chevronRight {
-    width: 10px;
-    margin-left: 10px;
-    position: relative;
-    bottom: -2px;
-  }
+  margin: 60px 36px 34px 36px;
+}
+
+.container_testimonial {
+  margin-bottom: 50px;
+}
+
+.container_testimonial h3 {
+  text-align: left;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.container_testimonial h4 {
+  text-align: left;
+  color: #A5A5A5;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container_testimonial p {
+  text-align: left;
+  color: var(--white);
+  font-size: 16px;
+  margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container_testimonial h6 {
+  text-align: center;
+  color: var(--green);
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.leerMas {
+  color: var(--green) !important;
+  font-size: 20px !important;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.chevronRight {
+  width: 10px;
+  margin-left: 10px;
+  position: relative;
+  bottom: -2px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly
+}
+
+.newsCard {
+  width: 550px;
+  height: 275px;
+  box-shadow: -14px -10px 34px -13px rgba(255, 254, 237, 0.25), 10px 10px 25px 9px rgba(0, 0, 0, 0.28);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px;
+  transition: all .2s ease-in-out
+}
+
+.newsCard:hover {
+  box-shadow: -2px -2px 29px -13px rgba(255, 254, 237, 0.45), 2px 2px 15px 9px rgba(0, 0, 0, 0.28);
+  transition: all .2s ease-in-out
+}
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation : landscape) {}
@@ -78,22 +99,22 @@
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    /* Styles */
+  /* Styles */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-    .logo_wrap {
-        display: block;
-        width: 160px;
-        margin-top: 56px;
-        margin-left: 56px;
-        cursor: pointer;
-    }
+  .logo_wrap {
+    display: block;
+    width: 160px;
+    margin-top: 56px;
+    margin-left: 56px;
+    cursor: pointer;
+  }
 
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
-    /* Styles */
+  /* Styles */
 }
