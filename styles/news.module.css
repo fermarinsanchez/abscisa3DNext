@@ -70,21 +70,26 @@
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly
+  justify-content: space-evenly
 }
 
 .newsCard {
   width: 550px;
   height: 275px;
-  box-shadow: -14px -10px 34px -13px rgba(255, 254, 237, 0.25), 10px 10px 25px 9px rgba(0, 0, 0, 0.28);
+  background: #131313;
+  box-shadow: -9px -7px 29px -13px rgba(255, 254, 237, 0.26), 2px 2px 15px 9px rgba(0, 0, 0, 0.28);
+  border-radius: 8px;
   border-radius: 8px;
   padding: 30px;
-  margin: 30px;
+  margin: 20px;
   transition: all .2s ease-in-out
 }
 
 .newsCard:hover {
-  box-shadow: -2px -2px 29px -13px rgba(255, 254, 237, 0.45), 2px 2px 15px 9px rgba(0, 0, 0, 0.28);
+  width: 552px;
+  height: 277px;
+  padding: 40px;
+  box-shadow: -14px -10px 34px -13px rgba(255, 254, 237, 0.25), 10px 10px 25px 9px rgba(0, 0, 0, 0.28);
   transition: all .2s ease-in-out
 }
 

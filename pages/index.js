@@ -7,6 +7,8 @@ import { data } from '../json_projects/data'
 import { news } from '../json_projects/news'
 import { useInView, InView } from 'react-intersection-observer';
 import Cube from '../components/Cube/Cube'
+import ScrollButton from '../components/ScrollButton/ScrollButton'
+import HeaderLogo from '../components/HeaderLogo/HeaderLogo'
 
 export const getStaticProps = async () => {
   return {
@@ -58,17 +60,7 @@ const Home = ({ projects, news }) => {
           style={{
             transform: `translateX(${offset * -0.3}px)`
           }}>
-          <div className={style.logo_wrap}>
-            <Link href="/">
-              <a>
-                <img
-                  src='/images/logo-abscisa-vector.svg'
-                  alt='abscisa3d logo'
-
-                />
-              </a>
-            </Link>
-          </div>
+          <HeaderLogo/>
           <h2>Capturamos<br />la realidad.</h2>
           <h3>Y la convertimos en 2D, 3D y BIM</h3>
           <Link href='/projects' passHref>
@@ -78,6 +70,7 @@ const Home = ({ projects, news }) => {
           </Link>
         </div>
       </section>
+      <ScrollButton/>
       <section className={style.wrapper_testimonials}>
         <div className={style.quotesSection}>
           <InView>

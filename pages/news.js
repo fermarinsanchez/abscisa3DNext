@@ -16,6 +16,14 @@ export default function news() {
     return (
         <>
             <section>
+                <div className={style.logo_wrap}>
+                    <Link href="/">
+                        <img
+                            src='/images/logo-abscisa-vector.svg'
+                            alt='abscisa3d logo'
+                        />
+                    </Link>
+                </div>
                 <div>
                     <h5 className={style.topHeader}>
                         Noticias
