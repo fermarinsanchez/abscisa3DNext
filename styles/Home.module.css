@@ -302,6 +302,7 @@
   transition: 0.3s;
 }
 
+
 .card_project_title {
   margin: 0 20px 0px 0;
   font-family: Roboto;
@@ -325,9 +326,19 @@
   padding-right: 10px;
 }
 
+.projImage {
+  transition: 0.5s
+}
+
+
+.projImage:hover {
+  transform: scale(1.1);
+  transition: 0.5s
+}
+
 .containerImageProject {
   width: 250px;
-  height: 154px;
+  max-height: 154px;
   overflow: hidden;
   border-radius: 4px 0 0 4px;
   position: absolute;
@@ -454,7 +465,7 @@
 }
 
 .container_card_sn>h5 {
-  margin: 16px 101px 8px 36px;
+  margin: 16px 55px 8px 36px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: normal;
@@ -467,7 +478,7 @@
 }
 
 .container_card_sn>p {
-  margin: 8px 151px 0 36px;
+  margin: 8px 42px 0 36px;
   font-family: 'Oswald';
   font-size: 18px;
   font-weight: 100;

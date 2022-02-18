@@ -1,5 +1,5 @@
 .projectsHeader>h5 {
-  margin: 132px 36px 36px 36px;
+  margin: 36px 36px 36px 36px;
   font-size: 30px;
   text-align: left;
   color: var(--white);
@@ -27,9 +27,11 @@
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation : landscape) {
   .projectsHeader {
-    width: 50%;
+    width: 31%;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 40px;
+    /* margin-right: ; */
+
   }
 
   .cardsContainer {
@@ -60,10 +62,9 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .projectsHeader {
-    width: 50%;
+    width: 31%;
     margin-top: 36%;
-    margin-left: 50px;
-    position: fixed;
+    margin-left: 0px;
   }
 
   .cardsContainer {
@@ -75,12 +76,11 @@
 
   .content {
     display: flex;
-    flex-direction: row;
-    position: relative;
+    justify-content: center;
   }
 
   .cardsContainer {
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin-left: 50%;
     display: flex;
@@ -94,14 +94,13 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   .projectsHeader {
-    width: 50%;
-    margin-left: 50px;
+    width: 31%;
+    margin-left: 0px;
     margin-top: 19%;
     position: fixed;
     top: -21%;
   }
   .projectsHeader>h5 {
-    margin-top: 120px;
   }
 }
 
@@ -113,12 +112,7 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
   .projectsHeader {
-    width: 35%;
-    margin-top: 150px;
-    margin-left: 300px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    width: 31%;
   }
 
   .projectsHeader>h5 {
@@ -132,16 +126,22 @@
     margin-top: 2px;
   }
 
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
   .cardsContainer {
-    width: 100vw;
-    height: auto;
+    width: 84%;
+    justify-content: space-around;
+    /*height: auto;
     margin-left: 25%;
     margin-right: 18%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column ;
-    justify-content: center;
-    align-items: end;
+    
+    align-items: end; */
   }
 
   .logo_wrap {
@@ -155,7 +155,6 @@
   .content {
     display: flex;
     flex-direction: row;
-    position: relative;
   }
 
 }

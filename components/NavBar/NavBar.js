@@ -63,23 +63,6 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-          <div className={style.iconos}>
-            <div className={style.email} rel="noreferrer">
-              <a href='mailto:info@abscisa3d.com' target="_blank" >   
-              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/mail_ewnb0e.svg' className={style.footerIcon} alt='icon email' />             
-              </a>
-            </div>
-            <div className={style.tel}>
-              <a href="tel:+34628209393" target="_blank" rel="noreferrer">
-              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/phone_tgdjxb.svg' className={style.footerIcon} alt='icon telephone' />
-              </a>
-            </div>
-            <div className={style.whatsapp}>
-              <a href='https://wa.me/+34628209393' target='_blank' rel="noreferrer">
-              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550386/whatsapp_kmhx0l.svg' className={style.footerIcon} alt='icon whatsapp' />
-              </a>
-            </div>
-          </div>
         </div>}
     </div>
 

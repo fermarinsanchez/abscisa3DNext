@@ -1,34 +1,40 @@
-import { slide as Menu } from 'react-burger-menu'
 import Link from 'next/link'
-import { useState } from 'react'
 import style from '../Footer/Footer.module.css'
 
 const Footer = () => {
     return (
         <footer>
-            <div className={style.containerFooter}>
+            <div className={style.containerHeroFooter}>
+                <div className={style.heroFooter}>
+                    <div className={style.heroFooter}>
+                        <p className={style.hero_footer_capturamos}>Capturamos la realidad</p>
+                        <p className={style.hero_footer_convertimos}>y la convertimos en 2d, 3D y BIM</p>
+                        
+                    </div>
+                </div>
+
                 <div className={style.wrapper_contacto} id="contacto">
                     <h5>Contacto</h5>
                     <div className={style.container_contacto}>
-                        <a href='mailto:info@abscisa3d.com' target="_blank" rel="noreferrer">
-                            <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/mail_ewnb0e.svg' className={style.footerIcon} alt='icon email' />
-                        </a>
+                        {/* <a href='mailto:info@abscisa3d.com' target="_blank" rel="noreferrer">
+                           <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/mail_ewnb0e.svg' className={style.footerIcon} alt='icon email' /> 
+                        </a> */}
                         <a href='mailto:info@abscisa3d.com' target="_blank" rel="noreferrer">
                             <p>info@abscisa3d.com</p>
                         </a>
                     </div>
                     <div className={style.container_contacto}>
-                        <a href="tel:+34628209393" target="_blank" rel="noreferrer">
-                            <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/phone_tgdjxb.svg' className={style.footerIcon} alt='icon telephone' />
-                        </a>
+                        {/* <a href="tel:+34628209393" target="_blank" rel="noreferrer">
+                             <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550385/phone_tgdjxb.svg' className={style.footerIcon} alt='icon telephone' /> 
+                        </a> */}
                         <a href="tel:+34628209393" target="_blank" rel="noreferrer">
                             <p>+34 628 209 393</p>
                         </a>
                     </div>
                     <div className={style.container_contacto}>
-                        <a href='https://wa.me/+34628209393' target='_blank' rel="noreferrer">
+                        {/* <a href='https://wa.me/+34628209393' target='_blank' rel="noreferrer">
                             <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1640550386/whatsapp_kmhx0l.svg' className={style.footerIcon} alt='icon whatsapp' />
-                        </a>
+                        </a> */}
                         <a href='https://wa.me/+34628209393' target='_blank' rel="noreferrer">
                             <p>WhatsApp</p>
                         </a>
@@ -36,7 +42,7 @@ const Footer = () => {
                 </div>
                 <div className={style.container_siguenos}>
                     <h5>SÍGUENOS</h5>
-                    <a href="https://www.linkedin.com/in/paula-noriega-fernandez-020678/" target="_blank" rel="noreferrer"><p>Linkedin</p></a>
+                    <a href="https://www.linkedin.com/company/abscisa3d" target="_blank" rel="noreferrer"><p>Linkedin</p></a>
                     <a href='https://www.instagram.com/abscisa3d/' target="_blank" rel="noreferrer"><p>Instagram</p></a>
                     <a href="https://www.youtube.com/channel/UCbOQEkKfbAdPLOaACHXAhQg" target="_blank" rel="noreferrer"><p>Youtube</p></a>
                 </div>

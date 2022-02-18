@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import style from '../styles/Home.module.css'
 import { data } from '../json_projects/data'
 import { news } from '../json_projects/news'
 import { useInView, InView } from 'react-intersection-observer';
 import Cube from '../components/Cube/Cube'
 import ScrollButton from '../components/ScrollButton/ScrollButton'
-import HeaderLogo from '../components/HeaderLogo/HeaderLogo'
 
 export const getStaticProps = async () => {
   return {
@@ -60,7 +58,16 @@ const Home = ({ projects, news }) => {
           style={{
             transform: `translateX(${offset * -0.3}px)`
           }}>
-          <HeaderLogo/>
+          <div className={style.logo_wrap}>
+            <Link href="/">
+                <a>
+                    <img
+                        src='/images/logo-abscisa-vector.svg'
+                        alt='abscisa3d logo'
+                    />
+                </a>
+            </Link>
+        </div>
           <h2>Capturamos<br />la realidad.</h2>
           <h3>Y la convertimos en 2D, 3D y BIM</h3>
           <Link href='/projects' passHref>
@@ -156,7 +163,7 @@ const Home = ({ projects, news }) => {
               <h5 className={style.card_project_title}>{projects[0].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <img src={`${projects[0].img}`} alt="card image mocked" />
+                <img src={`${projects[0].img}`} alt="card image mocked" className={style.projImage} />
               </div>
             </div>
           </Link>
@@ -165,7 +172,7 @@ const Home = ({ projects, news }) => {
               <h5 className={style.card_project_title}>{projects[1].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <img src={`${projects[1].img}`} alt="card image mocked" />
+                <img src={`${projects[1].img}`} alt="card image mocked" className={style.projImage} />
               </div>
             </div>
           </Link>
@@ -175,7 +182,7 @@ const Home = ({ projects, news }) => {
               <h5 className={style.card_project_title}>{projects[2].name}</h5>
               <p className={style.card_project_year}>2020</p>
               <div className={style.containerImageProject}>
-                <img src={`${projects[2].img}`} alt="card image mocked" />
+                <img src={`${projects[2].img}`} alt="card image mocked" className={style.projImage} />
 
               </div>
             </div>
@@ -222,17 +229,17 @@ const Home = ({ projects, news }) => {
             <div className={`${style.card_1}, ${style.container_card_sn}`}>
               <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
               <h5>Paula Noriega</h5>
-              <p>Paula Noriega</p>
+              <p>Ingeniera Técnica en Topografía</p>
             </div>
             <div className={style.container_card_sn}>
               <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
-              <h5>Paula Noriega</h5>
-              <p>Paula Noriega</p>
+              <h5>Antón Iglesias</h5>
+              <p>Consultor BIM</p>
             </div>
             <div className={style.container_card_sn}>
               <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
-              <h5>Paula Noriega</h5>
-              <p>Paula Noriega</p>
+              <h5>Héctor Tena</h5>
+              <p>Ingeniero en Edificación</p>
             </div>
           </div>
         </div>

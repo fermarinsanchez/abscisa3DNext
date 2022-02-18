@@ -11,8 +11,8 @@ export default function Layout({ children, staticElements }) {
     return (
         <div>
             <Head>
-                <meta charset="utf-8" />
-                <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+                <meta charSet="utf-8" />
+                <meta httpEquiv="x-ua-compatible" content="ie=edge; chrome=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
 
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />

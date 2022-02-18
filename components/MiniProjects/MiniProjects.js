@@ -11,21 +11,24 @@ const MiniProjects = (props) => {
         rootMargin: '500px 500px',
     });
 
+
     return (
         <>
             <InView >
-                <Link href={'/projects/[id]'} as={`/projects/${props.id}`} passHref>
-                    <div className={inView ? style.enterCard : style.exitCard}
-                        ref={ref}>
-                        <div className={style.card_project} key={props.id}>
-                            <h5 className={style.card_project_title}>{props.name}</h5>
-                            <p className={style.card_project_year}>2020</p>
-                            <div className={style.containerImageProject}>
-                                <img src={`${props.img}`} alt="props.alt" />
+                    <Link href={'/projects/[id]'} as={`/projects/${props.id}`} passHref>
+                        <div className={inView ? style.enterCard : style.exitCard}
+                            ref={ref}>
+                            <div className={style.card_project} key={props.id}>
+                                <h5 className={style.card_project_title}>{props.name}</h5>
+                                <p className={style.card_project_year}>{props.year}</p>
+                                <div className={style.containerImageProject}>
+                                    <img src={`${props.img}`} alt={`${props.alt}`} className={style.cardImage} />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
+                
+
             </InView>
         </>
     )

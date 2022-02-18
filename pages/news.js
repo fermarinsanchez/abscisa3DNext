@@ -24,31 +24,34 @@ export default function news() {
                         />
                     </Link>
                 </div>
-                <div>
-                    <h5 className={style.topHeader}>
-                        Noticias
-                    </h5>
-                </div>
-                <section className={style.wrapper_testimonials}>
-                    <div className={style.cardsContainer}>
-                        {newsData.map(elem => {
-                            return (
-                                <div className={style.newsCard}>
-                                    <a href={elem.link} target="_blank" style={{ textDecoration: 'none' }}>
-                                        <div className={style.container_testimonial}>
-                                            <h3>{elem.title}</h3>
-                                            <h4>{elem.font}</h4>
-                                            <p>{elem.text}</p>
-                                            <a href={elem.link} target='_blank' className={style.newsAnchor} style={{ textDecoration: 'none' }}>
-                                                <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d' /></span></p>
-                                            </a>
-                                        </div>
-                                    </a>
-                                </div>
-                            )
-                        })}
+                <div className={style.generalContainer}>
+                    <div>
+                        <h5 className={style.topHeader}>
+                            Noticias
+                        </h5>
                     </div>
-                </section>
+                    <section className={style.wrapper_testimonials}>
+                        <div className={style.cardsContainer}>
+                            {newsData.map(elem => {
+                                return (
+                                    <div className={style.newsCard}>
+                                        <a href={elem.link} target="_blank" style={{ textDecoration: 'none' }}>
+                                            <div className={style.container_testimonial}>
+                                                <h3>{elem.title}</h3>
+                                                <h4>{elem.font}</h4>
+                                                <p>{elem.text}</p>
+                                                <a href={elem.link} target='_blank' className={style.newsAnchor} style={{ textDecoration: 'none' }}>
+                                                    <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d' /></span></p>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </section>
+                </div>
+
             </section>
         </>
     )

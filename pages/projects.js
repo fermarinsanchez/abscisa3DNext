@@ -14,19 +14,27 @@ export const getStaticProps = async () => {
 
 const Proyectos = ({ projects }) => {
 
-const [offset, setOffset] = useState(0)
+    const [offset, setOffset] = useState(0)
+    const [position, setPosition] = useState(0)
 
-useEffect(() => {
-    function handleScroll() {
-      setOffset(window.pageYOffset)
-    }
+    useEffect(() => {
+        function handleScroll() {
+            setOffset(window.pageYOffset)
 
-    window.addEventListener("scroll", handleScroll)
+        }
+        setPosition(offset * -0.04)
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
+
+
+
+
+
 
     return (
         <section>
@@ -41,14 +49,13 @@ useEffect(() => {
                 </Link>
             </div>
             <div className={style.content}>
-                <div className={style.projectsHeader} 
-                    style={{
-                        transform: `translateY(${offset * -0.04}px)`
-                    }}>
-                    <h5>Nuestros Proyectos</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
-                </div>
-                <div className={style.cardsContainer}>
+                <div className={style.cardsContainer} id='projectsContainer'>
+                    <div className={style.projectsHeader}>
+                        <h5>Nuestros Proyectos</h5>
+                        <p>En ABSCISA3d capturamos la realidad y la documentamos según las necesidades de nuestros clientes a los cuales asesoramos gracias a nuestra experiencia.
+                            Os presentamos algunos de nuestros proyectos, en los que con la nube de puntos capturada, modelamos en 3d y BIM, delineamos, hacemos inspección y mediciones  con el proyecto, mallado y texturizado de estructuras patrimoniales, y mucho más.
+                        </p>
+                    </div>
                     {projects.map(project => (
                         <MiniProjects key={project.id} {...project} />
                     ))}
