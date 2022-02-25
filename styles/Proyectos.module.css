@@ -18,6 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 92px;
 }
 
 .logo_wrap {
@@ -27,20 +28,28 @@
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation : landscape) {
   .projectsHeader {
-    width: 31%;
+    width: 100%;
     margin-top: 30px;
     margin-left: 40px;
     /* margin-right: ; */
 
   }
 
-  .cardsContainer {
-    margin-top: 80px;
-    margin-left: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  .projectsHeader>h5 {
+    margin: 36px 36px 36px 36px;
+    font-size: 30px;
+    text-align: left;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 400;
   }
+  
+  .projectsHeader>p {
+    margin: 0px 36px 46px 36px;
+    font-size: 16px;
+  }
+
+ 
 
   .content {
     display: flex;
@@ -49,7 +58,7 @@
   }
 
   .cardsContainer {
-    width: 50vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -62,17 +71,12 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .projectsHeader {
-    width: 31%;
-    margin-top: 36%;
+    width: 100%;
+    margin-top: 6%;
     margin-left: 0px;
   }
 
-  .cardsContainer {
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+  
 
   .content {
     display: flex;
@@ -82,7 +86,6 @@
   .cardsContainer {
     width: 100%;
     height: auto;
-    margin-left: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -94,10 +97,9 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   .projectsHeader {
-    width: 31%;
+    width: 100%;
     margin-left: 0px;
-    margin-top: 19%;
-    position: fixed;
+    margin-top: 6%;
     top: -21%;
   }
   .projectsHeader>h5 {

@@ -13,8 +13,19 @@
     height: 265px;
     margin-left: 36px;
 }
+.imgDest {
+    position: relative;
+}
 .imgDestShadow {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 265px;
+    height: 265px;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(100px);
 }
 
 .pTitle {
@@ -117,27 +128,38 @@
     .projectHeader {
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
+        justify-content: space-around;
         margin-top: 120px;
     }
 
-    .topHeader {
-        margin: 132px 36px -49px 36px;
-    }
 
     .imgDestView {
         width: 265px;
         height: 265px;
         margin-left: 36px;
     }
+    .imgDest {
+        position: relative;
+        margin-right: 4em;
+    }
     .imgDestShadow {
-        display: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 265px;
+        height: 265px;
+        z-index: -1;
+        opacity: 0.5;
+        filter: blur(100px);
     }
 
     .topHeader {
         width: auto;
         height: 114px;
         font-size: 42px;
+        margin: 80px 36px -49px 36px;
     }
 
     .pTitle {
@@ -174,6 +196,7 @@
         flex-direction: row;
         align-items: baseline;
         margin-top: 120px;
+        align-items: center;
     }
     
     .containerTopHeader {
@@ -188,8 +211,21 @@
         height: 265px;
         margin-left: 0px;
     }
+  
+    .imgDest {
+        position: relative;
+        margin-left: 12em;
+    }
     .imgDestShadow {
-        display: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 265px;
+        height: 265px;
+        z-index: -1;
+        opacity: 0.5;
+        filter: blur(100px);
     }
 
     .topHeader {
@@ -221,6 +257,13 @@
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    .projectHeader{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 120px;
+
+    }
     .imgDest {
         position: relative;
         margin-left: 12em;
