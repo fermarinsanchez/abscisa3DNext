@@ -3,13 +3,11 @@
 }
 
 .wrapper_contacto>h5 {
-    margin: 60px 132px 26px 36px;
-    font-family: Roboto;
+    margin: 60px 132px 24px 36px;
     font-size: 30px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     text-align: left;
     color: #fffeed;
@@ -45,7 +43,6 @@
 }
 
 .container_contacto p {
-    font-family: Roboto;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -54,8 +51,8 @@
     letter-spacing: normal;
     text-align: left;
     color: var(--green);
-    margin: 0 0 26px 0;
-    color: #a5a5a5;
+    margin: 0 0 8px 0;
+    color: #05f0d4;
 }
 
 .container_contacto p::after {
@@ -73,13 +70,11 @@
 }
 
 .container_siguenos {
-    margin: 20px 17.1px 20px 36px;
-    font-family: Roboto;
+    margin: 20px 17.1px 32px 36px;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     text-align: left;
     color: #a5a5a5;
@@ -93,7 +88,7 @@
 
 .container_siguenos a {
     text-decoration: none;
-    color: #a5a5a5;
+    color: #05f0d4;
     transition: 0.9s;
 }
 
@@ -103,12 +98,12 @@
 }
 
 .container_siguenos>h5 {
-    color: #c4c4c4;
+    margin-bottom: 24px;
+    color: #fffeed;
 }
 
 .container_paginas {
     margin: 60px 10.1px 60px 36px;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -131,6 +126,17 @@
 }
 
 .container_paginas>h5 {
+    color: #c4c4c4;
+}
+
+.smallText {
+    text-align: center;
+
+}
+
+.smallText > small {
+    font-size: 13px;
+    font-family: "Apercu Light";
     color: #c4c4c4;
 }
 
@@ -178,6 +184,11 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+
+    .footerLinks {
+        display: flex;
+        flex-direction: row;
+      }
     .containerFooter {
         display: flex;
         flex-direction: column;
@@ -185,7 +196,6 @@
     }
     .containerHeroFooter {
         width: 100%;
-        height: 100%;
         display: block;
     }
 
@@ -199,21 +209,18 @@
     }
 
     .hero_footer_capturamos {
-        font-family: 'Roboto';
         font-weight: 100;
         font-size: 100px;
         margin: 0 0 -50px 0;
     }
 
     .hero_footer_convertimos {
-        font-family: 'Oswald';
         font-weight: 100;
         font-size: 50px;
-        margin: 0 0 0 0;
+        margin: 80px 0 0 0;
     }
 
     .hero_footer_realidad {
-        font-family: 'Oswald';
         font-weight: 100;
         font-size: 100px;
         margin: 0 0 0 0;
@@ -265,6 +272,9 @@
     .wrapper_contacto>h5 {
         display: none;
     }
+    
+
+    
 }
 
 /* Large screens ----------- */

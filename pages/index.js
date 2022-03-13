@@ -68,8 +68,7 @@ const Home = ({ projects, news }) => {
                 </a>
             </Link>
         </div>
-          <h2>Capturamos<br />la realidad.</h2>
-          <h3>Y la convertimos en 2D, 3D y BIM</h3>
+          <h1>Capturamos<br />la realidad y la convertimos en 2D, 3D y BIM</h1>
           <Link href='/projects' passHref>
             <div className={style.homeCTA}>
               <p>Ver proyectos</p>
@@ -105,24 +104,24 @@ const Home = ({ projects, news }) => {
         <div className={style.newsContainer}>
          
             <div className={style.container_testimonial}>
-              <h3>{news[0].title}</h3>
-              <h4>{news[0].font}</h4>
+              <h4>{news[0].title}</h4>
+              <h6 className={style.subTitleTestimonial}>{news[0].font}</h6>
               <p>{news[0].text}</p>
               <a href={news[0].link} target='_blank' className={style.newsAnchor}>
               <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d'/></span></p>
               </a>
             </div>
             <div className={style.container_testimonial}>
-              <h3>{news[1].title}</h3>
-              <h4>{news[1].font}</h4>
+              <h4>{news[1].title}</h4>
+              <h6 className={style.subTitleTestimonial}>{news[1].font}</h6>
               <p>{news[1].text}</p>
               <a href={news[1].link} target='_blank' className={style.newsAnchor}>
               <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d'/></span></p>
               </a>
             </div>
             <div className={style.container_testimonial}>
-              <h3>{news[2].title}</h3>
-              <h4>{news[2].font}</h4>
+              <h4>{news[2].title}</h4>
+              <h6 className={style.subTitleTestimonial}>{news[2].font}</h6>
               <p>{news[2].text}</p>
               <a href={news[2].link} target='_blank' className={style.newsAnchor}>
               <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d'/></span></p>
@@ -151,7 +150,7 @@ const Home = ({ projects, news }) => {
           className={[style.container_last_projects_text, inView && style.growAnimation].join(" ")}
           style={{ opacity: inView ? 1 : 0 }}
         >
-          <h5>Ultimos Proyectos</h5>
+          <h3>Ultimos Proyectos</h3>
         </div>
         <div
           ref={ref}
@@ -209,7 +208,7 @@ const Home = ({ projects, news }) => {
         <div className={style.container_sobre_nosotros}>
           <div className={style.textAndCube}>
             <div className={style.container_sobre_nosotros}>
-              <h5>Sobre #ABSCISA3d</h5>
+              <h3>Sobre #ABSCISA3d</h3>
               <p className={style.sobre_nosotros_text_1} >Somos un estudio especializado en proyectos de nubes de puntos, modelados y BIM.</p>
               <p className={style.sobre_nosotros_text_2}>Capturamos la realidad para transformarla en un entorno digital.</p>
             </div>
@@ -222,22 +221,22 @@ const Home = ({ projects, news }) => {
               </div>
             </InView>
           </div>
-          <h5 id='equipo'>Equipo</h5>
+          <h3 id='equipo'm className={style.teamHeader}>Equipo</h3>
           <div
             className={[style.equipo_cards, inView && style.growAnimation].join(" ")}
             style={{ opacity: inView ? 1 : 0 }}>
             <div className={`${style.card_1}, ${style.container_card_sn}`}>
-              <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
+              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1647198578/samples/paula_vectorial_spbiig.jpg' width={300} height={400} objectFit='cover' alt='Paula Noriega' />
               <h5>Paula Noriega</h5>
               <p>Ingeniera Técnica en Topografía</p>
             </div>
             <div className={style.container_card_sn}>
-              <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
+              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1647198578/samples/paula_vectorial_spbiig.jpg' width={300} height={400} objectFit='cover' alt='Paula Noriega' />
               <h5>Antón Iglesias</h5>
               <p>Consultor BIM</p>
             </div>
             <div className={style.container_card_sn}>
-              <Image src='/images/Paulinchi.jpg' width={300} height={600} objectFit='cover' alt='Paula Noriega' />
+              <img src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1647198578/samples/paula_vectorial_spbiig.jpg' width={300} height={400} objectFit='cover' alt='Paula Noriega' />
               <h5>Héctor Tena</h5>
               <p>Ingeniero en Edificación</p>
             </div>

@@ -13,10 +13,28 @@ export default function Layout({ children, staticElements }) {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge; chrome=1" />
-                <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                 <title>#ABSCISA3d</title>
+                <link
+                    rel="preload"
+                    href="/fonts/Apercu_Regular.otf"
+                    as="font"
+                    crossOrigin=""
+                />
+                <link
+                    rel="preload"
+                    href="/fonts/Apercu_Light.otf"
+                    as="font"
+                    crossOrigin=""
+                />
+                  <link
+                    rel="preload"
+                    href="/fonts/Apercu_Bold.otf"
+                    as="font"
+                    crossOrigin=""
+                />
             </Head>
             {staticElements && (
                 <header>
