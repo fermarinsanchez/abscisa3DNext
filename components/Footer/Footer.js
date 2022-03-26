@@ -34,7 +34,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={style.container_siguenos}>
-                        <h5>SÍGUENOS</h5>
+                        <h5>Síguenos</h5>
                         <a href="https://www.linkedin.com/company/abscisa3d" target="_blank" rel="noreferrer"><p>Linkedin</p></a>
                         <a href='https://www.instagram.com/abscisa3d/' target="_blank" rel="noreferrer"><p>Instagram</p></a>
                         <a href="https://www.youtube.com/channel/UCbOQEkKfbAdPLOaACHXAhQg" target="_blank" rel="noreferrer"><p>Youtube</p></a>

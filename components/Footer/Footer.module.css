@@ -80,16 +80,19 @@
     color: #a5a5a5;
 }
 
-.container_siguenos a {
-    text-decoration: none;
-    color: #a5a5a5;
-    transition: 0.9s;
-}
 
 .container_siguenos a {
     text-decoration: none;
     color: #05f0d4;
     transition: 0.9s;
+}
+
+.container_siguenos p {
+    text-decoration: none;
+    color: #05f0d4;
+    transition: 0.9s;
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .container_siguenos a:hover {

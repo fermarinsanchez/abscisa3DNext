@@ -1,6 +1,6 @@
 .topHeader {
   width: 297px;
-  margin: 132px 36px -26px 44px;
+  margin: 36px 36px 36px 36px;
   font-size: 58px;
   font-weight: 400;
   text-align: left;
@@ -8,6 +8,10 @@
 }
 .generalContainer {
   padding: 10vh 7vw;
+}
+
+.logo_wrap {
+  display: none;
 }
 
 .wrapper_testimonials {
@@ -19,23 +23,22 @@
   margin-bottom: 50px;
 }
 
-.container_testimonial h3 {
+.container_testimonial h4 {
   text-align: left;
   color: var(--white);
-  font-size: 20px;
   margin-bottom: 8px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
 
-.container_testimonial h4 {
+.container_testimonial h6 {
   text-align: left;
+  text-transform: uppercase;
   color: #A5A5A5;
-  font-weight: 100;
-  font-size: 20px;
+  font-family: "Apercu Light";
   margin-top: 0px;
-  margin-bottom: 12px;
-  font-family: 'Oswald', sans-serif;
+  line-height: 12px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .container_testimonial p {
@@ -46,16 +49,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
-.container_testimonial h6 {
-  text-align: center;
-  color: var(--green);
-  font-size: 14px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .leerMas {
   color: var(--green) !important;
@@ -76,7 +69,7 @@
   justify-content: space-evenly
 }
 
-.newsCard {
+/* .newsCard {
   width: 550px;
   height: 275px;
   background: #131313;
@@ -94,7 +87,7 @@
   padding: 30px;
   box-shadow: -14px -10px 34px -13px rgba(255, 254, 237, 0.25), 10px 10px 25px 9px rgba(0, 0, 0, 0.28);
   transition: all .2s ease-in-out
-}
+} */
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation : landscape) {}

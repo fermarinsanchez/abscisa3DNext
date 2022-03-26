@@ -119,7 +119,7 @@ const Home = ({ projects, news }) => {
               <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d'/></span></p>
               </a>
             </div>
-            <div className={style.container_testimonial}>
+            <div className={style.container_testimonial_last}>
               <h4>{news[2].title}</h4>
               <h6 className={style.subTitleTestimonial}>{news[2].font}</h6>
               <p>{news[2].text}</p>
@@ -221,7 +221,9 @@ const Home = ({ projects, news }) => {
               </div>
             </InView>
           </div>
-          <h3 id='equipo'm className={style.teamHeader}>Equipo</h3>
+          </div>
+          <div className={style.container_equipo}>
+          <h3 id='equipo' className={style.teamHeader}>Equipo</h3>
           <div
             className={[style.equipo_cards, inView && style.growAnimation].join(" ")}
             style={{ opacity: inView ? 1 : 0 }}>

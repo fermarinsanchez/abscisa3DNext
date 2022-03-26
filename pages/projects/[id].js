@@ -1,7 +1,6 @@
 import { data } from '../../json_projects/data'
 import { useState, useEffect } from 'react';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
-import Link from 'next/link'
 import style from '../../styles/ProjectPage.module.css'
 import { useInView, InView } from 'react-intersection-observer';
 import HeaderLogo from '../../components/HeaderLogo/HeaderLogo';
@@ -50,9 +49,9 @@ const ProjectPage = ({ project }) => {
                 <HeaderLogo/>
                 <div className={style.projectHeader}>
                     <div className={style.containerTopHeader}>
-                    <h5 className={style.topHeader} style={{ transform: `translateY(${offset * -0.5}px)` }}>
+                    <h1 className={style.topHeader} style={{ transform: `translateY(${offset * -0.5}px)` }}>
                         {project.name}
-                    </h5> 
+                    </h1> 
                     </div>
                     <div className={style.imgDest}>
                         <img src={project.imgDest} alt={project.alt} className={style.imgDestView} style={{ transform: `translateY(${offset * -0.1}px)` }} />

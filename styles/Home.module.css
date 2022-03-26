@@ -66,6 +66,7 @@
   font-weight: 400;
   margin: 8px 25px 12px 36px;
   line-height: normal;
+  overflow: hidden;
   animation: fadeUpInH2 1s ease-in;
 }
 
@@ -128,7 +129,7 @@
 }
 
 .container_mas_noticias {
-  margin: 45px 0 49px 0;
+  margin: -20px 0 56px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +154,35 @@
 
 .container_testimonial {
   margin-bottom: 56px;
+}
+
+.container_testimonial_last {
+  margin-bottom: 48px;
+}
+
+.container_testimonial_last h4 {
+  text-align: left;
+  font-family: "Apercu Bold";
+  color: var(--white);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.container_testimonial_last h6 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #A5A5A5;
+  font-family: "Apercu Light";
+  margin-top: 0px;
+  line-height: 12px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.container_testimonial_last p {
+  text-align: left;
+  color: var(--white);
+  margin-top: 0px;
 }
 
 .container_testimonial h4 {
@@ -201,8 +231,9 @@
   animation-timing-function: ease-in-out;
 }
 
-.container_last_projects_text > h3 {
+.container_last_projects_text>h3 {
   margin: 50px 36px 0px 36px;
+  padding-bottom: 6px;
   text-align: left;
   font-weight: 400;
   color: var(--white);
@@ -267,14 +298,12 @@
 
 .card_project_title {
   margin: 0 20px 0px 0;
-  font-weight: normal;
   font-size: 24px;
   color: var(--white);
 }
 
 .card_project_year {
   margin: 0px 177px 73px 2px;
-  font-family: 'Oswald';
   font-size: 18px;
   color: #a5a5a5;
 }
@@ -317,7 +346,7 @@
 }
 
 .container_mas_proyectos {
-  margin: 45px 0 49px 0;
+  margin: 40px 0 49px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,6 +390,19 @@
   left: 66px;
 }
 
+.container_equipo {
+  padding-top: 32px;
+  padding-bottom: 72px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.container_equipo>h3 {
+  margin: 0 36px 16px 44px;
+  color: #fffeed;
+  font-weight: 400;
+}
+
 .container_sobre_nosotros {
   background-color: #232323;
   padding-top: 32px;
@@ -371,7 +413,6 @@
 
 .container_sobre_nosotros>h3 {
   margin: 0 36px 16px 44px;
-  font-size: 30px;
   color: #fffeed;
   font-weight: 400;
 }
@@ -382,7 +423,6 @@
 
 .sobre_nosotros_text_1 {
   margin: 0px 36px 16px 44px;
-  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -394,8 +434,7 @@
 }
 
 .sobre_nosotros_text_2 {
-  margin: 0px 36px 140px 44px;
-  font-size: 16px;
+  margin: 0px 36px 70px 44px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -468,13 +507,11 @@
 @keyframes fadeUpInH2 {
   from {
     opacity: 0;
-    font-size: 30px;
-    margin-right: 200px
   }
 
   to {
     opacity: 1;
-    font-size: 42px;
+
   }
 }
 
@@ -538,6 +575,10 @@
     margin-left: 30px;
   }
 
+  .headers_mobile>h1 {
+    font-size: 31px;
+  }
+
   .wrapper_testimonials {
     margin: 72px 34px 30px 30px;
   }
@@ -558,7 +599,7 @@
     margin: 0 auto;
   }
 
-  .container_sobre_nosotros>h5 {
+  .container_sobre_nosotros>h3 {
     margin-left: 44px;
   }
 
@@ -621,6 +662,14 @@
     margin-top: 5px;
   }
 
+  .container_sobre_nosotros>h3 {
+    font-size: 42px;
+  }
+
+  .container_sobre_nosotros>p {
+    font-size: 18px;
+  }
+
   .container_our_services {
     margin: 0 auto;
   }
@@ -669,6 +718,7 @@
   }
 
   .leftBlock {
+    display: block;
     width: 13vw;
     height: 100%;
     background-color: #181919;
@@ -725,6 +775,7 @@
   }
 
   .leftBlock {
+    display: block;
     width: 33vw;
     height: 100%;
     background-color: #181919;
@@ -779,22 +830,16 @@
     margin-bottom: 34px;
   }
 
-  .headers_mobile>h2 {
+  .headers_mobile>h1 {
     font-family: "Apercu Bold";
     font-size: 5.5em;
     font-weight: 200;
-    margin: 8px 600px 17px 500px;
+    margin: 8px 35% 17px 25%;
   }
 
-  .headers_mobile>h3 {
-    font-family: "Apercu Bold";
-    margin: 0px 100px 0 500px;
-    font-size: 34px;
-    font-weight: 100;
-  }
 
   .homeCTA {
-    margin: 36px 100px 0 500px;
+    margin: 36px 100px 0 25%;
     border: 2px solid var(--green);
     border-radius: 4px;
   }
@@ -835,10 +880,11 @@
   }
 
   .quotesSection {
-    width: 50%;
+    width: 25%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 3.1%;
   }
 
   .container_with_arrow>img {
@@ -854,27 +900,67 @@
     display: none;
   }
 
+  .container_last_projects_text>h3 {
+    margin: 36px 36px 0px 36px;
+  }
+
   .container_sobre_nosotros {
     padding: 10vh 7vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .container_sobre_nosotros>h3 {
+    padding-bottom: 32px;
+  }
+
+  .sobre_nosotros_text_1 {
+    margin: 0px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fdfad6;
+    max-width: 300px;
+    padding-bottom: 24px;
+
+
+  }
+
+  .sobre_nosotros_text_2 {
+    margin: 0px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fdfad6;
+    max-width: 300px;
+  }
+
+  .container_equipo {
+    padding: 7vh 7vw 10vh 7vw;
   }
 
   .projectsIcon {
     width: 40px !important;
   }
 
-  .container_sobre_nosotros>h5 {
-    font-size: 58px;
+  .container_sobre_nosotros>h3 {
+    margin: 0;
   }
 
   .textAndCube {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .cube {
     display: block;
-    padding-top: 46px;
+    padding-top: 12px;
     padding-right: 300px;
   }
 
@@ -883,7 +969,7 @@
   }
 
   .proyectsSectionContainer {
-    padding: 10vh 7vw;
+    padding: 10vh 7vw 8vh 7vw;
   }
 
   .container_last_projects {
@@ -968,7 +1054,7 @@
   }
 
 
-  @keyframes fadeUpInH2 {
+  /* @keyframes fadeUpInH2 {
     0% {
       opacity: 0;
       font-size: 3em;
@@ -979,7 +1065,7 @@
       opacity: 1;
       font-size: 5.5em;
     }
-  }
+  } */
 
   @keyframes fadeUpInH3 {
 

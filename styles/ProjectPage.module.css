@@ -1,8 +1,7 @@
 .topHeader {
     width: 297px;
     height: 114px;
-    margin: 132px 36px 0px 36px;
-    font-size: 30px;
+    margin: 132px 36px 36px 36px;
     font-weight: 300;
     text-align: left;
     color: var(--white);
@@ -30,15 +29,12 @@
 
 .pTitle {
     width: 297px;
-    height: 114px;
-    margin: 100px 36px 40px 21px;
+    margin: 56px 36px 40px 36px;
 }
 
 .pTitle>h5 {
-    font-size: 30px;
     text-align: left;
     color: var(--green);
-    font-family: 'Oswald';
     font-weight: 200;
 }
 
@@ -82,15 +78,14 @@
 }
 
 .containerData {
-    margin: 0 0px 32px 23px;
-    font-size: 16px;
+    margin: 56px 0px 32px 23px;
 }
 
 .containerData li {
     list-style: none;
     vertical-align: top;
-
 }
+
 
 .containerData tr {
     min-width: 200px;
@@ -106,7 +101,7 @@
 }
 
 .projectDescription p {
-    margin: 0 32px 32px 23px;
+    margin: 0 32px 32px 36px;
     font-size: 16px;
 }
 
@@ -328,8 +323,7 @@
 
     .projectHeader {
         padding-bottom: 9vh;
-        min-height: 50vh;
-        align-items: end;
+        align-items: center;
     }
     .containerTopHeader {
         width: 50%;
@@ -338,8 +332,9 @@
     .topHeader {
         font-size: 6.5em;
         line-height: 1.1em;
-        width: 50%;
-        margin: 97px 36px 100px 36px;
+        width: 80%;
+        /* margin: 97px 36px 100px 36px; */
+        margin: 0px 0px 0px 0px;
     }
 
     .imgDest {
@@ -365,7 +360,7 @@
     }
     
     .dataAndGallery {
-        margin-top: 14em;
+        margin-top: 4em;
         display: flex;
         justify-content: space-between;
     }

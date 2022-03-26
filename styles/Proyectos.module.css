@@ -1,15 +1,13 @@
-.projectsHeader>h5 {
+.projectsHeader>h1{
   margin: 36px 36px 36px 36px;
-  font-size: 30px;
   text-align: left;
   color: var(--white);
-  font-size: 30px;
   font-weight: 400;
 }
 
 .projectsHeader>p {
   margin: 0px 36px 46px 36px;
-  font-size: 16px;
+  color: var(--white);
 }
 
 .cardsContainer {
@@ -20,9 +18,32 @@
   align-items: center;
   margin-top: 92px;
 }
+.growAnimation {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
 
 .logo_wrap {
   display: none;
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -116,12 +137,14 @@
 
  
   .projectsHeader {
-    width: 31%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px
   }
 
-  .projectsHeader>h5 {
+  .projectsHeader>h1 {
     margin-bottom: 10px;
-    font-size: 3.5em;
   }
 
   .projectsHeader>p {
@@ -132,12 +155,14 @@
 
   .content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
   .cardsContainer {
     width: 84%;
     justify-content: space-around;
+    margin-top: 0px;
     /*height: auto;
     margin-left: 25%;
     margin-right: 18%;
@@ -156,10 +181,13 @@
     cursor: pointer;
   }
 
-  .content {
+  .growAnimation {
+    overflow-x: scroll;
     display: flex;
-    flex-direction: row;
+    /* -webkit-box-shadow: inset -21px 1px 42px -12px rgba(0,0,0,0.47); 
+    box-shadow: inset -21px 1px 42px -12px rgba(0,0,0,0.47); */
   }
+  
 
 }
 
