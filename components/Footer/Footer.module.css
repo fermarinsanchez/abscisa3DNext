@@ -69,6 +69,11 @@
     width: 100%;
 }
 
+.container_siguenos_element {
+    display: flex;
+    align-items: center;
+}
+
 .container_siguenos {
     margin: 20px 17.1px 32px 36px;
     font-size: 16px;
@@ -93,6 +98,7 @@
     transition: 0.9s;
     margin-bottom: 8px;
     margin-top: 0;
+    display: block;
 }
 
 .container_siguenos p::after {

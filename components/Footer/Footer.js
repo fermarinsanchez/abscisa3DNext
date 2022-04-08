@@ -9,30 +9,30 @@ const Footer = () => {
         /* Optional options */
         triggerOnce: true,
         rootMargin: '-300px 0px',
-      });
+    });
 
     return (
         <div>
             <div className={style.containerHeroFooter}>
-                
-                    <div 
-                        className={[style.heroFooter, inView && style.growAnimation].join(" ")}
-                        style={{ opacity: inView ? 1 : 0 }}
-                        ref={ref}
-                    >
-                        <h2 className={style.hero_footer_capturamos}
-                        >Capturamos la realidad y la convertimos en 2d, 3D y BIM</h2>
-                     
-                    </div>
-            
-                <div className={style.footerLinks}>
-                <div className={style.footerLogo}>
-                <img
-                        src='/images/logo-abscisa-vector.svg'
-                        alt='abscisa3d logo'
-                    />
-                <p>&copy; {new Date().getFullYear()}</p>
+
+                <div
+                    className={[style.heroFooter, inView && style.growAnimation].join(" ")}
+                    style={{ opacity: inView ? 1 : 0 }}
+                    ref={ref}
+                >
+                    <h2 className={style.hero_footer_capturamos}
+                    >Capturamos la realidad y la convertimos en 2d, 3D y BIM</h2>
+
                 </div>
+
+                <div className={style.footerLinks}>
+                    <div className={style.footerLogo}>
+                        <img
+                            src='/images/logo-abscisa-vector.svg'
+                            alt='abscisa3d logo'
+                        />
+                        <p>&copy; {new Date().getFullYear()}</p>
+                    </div>
                     <div className={style.wrapper_contacto} id="contacto">
                         <h5>Contacto</h5>
                         <div className={style.container_contacto}>
@@ -56,9 +56,15 @@ const Footer = () => {
                     </div>
                     <div className={style.container_siguenos}>
                         <h5>Síguenos</h5>
+                        <div className={style.container_siguenos_element}>
                         <a href="https://www.linkedin.com/company/abscisa3d" target="_blank" rel="noreferrer"><p>Linkedin</p></a>
+                        </div>
+                        <div className={style.container_siguenos_element}>
                         <a href='https://www.instagram.com/abscisa3d/' target="_blank" rel="noreferrer"><p>Instagram</p></a>
+                        </div>
+                        <div className={style.container_siguenos_element}>
                         <a href="https://www.youtube.com/channel/UCbOQEkKfbAdPLOaACHXAhQg" target="_blank" rel="noreferrer"><p>Youtube</p></a>
+                        </div>
                     </div>
                 </div>
 
