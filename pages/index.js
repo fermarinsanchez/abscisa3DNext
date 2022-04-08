@@ -222,7 +222,7 @@ const Home = ({ projects, news }) => {
             </InView>
           </div>
           </div>
-          <div className={style.container_equipo}>
+          {/* <div className={style.container_equipo}>
           <h3 id='equipo' className={style.teamHeader}>Equipo</h3>
           <div
             className={[style.equipo_cards, inView && style.growAnimation].join(" ")}
@@ -243,7 +243,7 @@ const Home = ({ projects, news }) => {
               <p>Ingeniero en Edificación</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   )

@@ -32,9 +32,9 @@
     margin: 56px 36px 40px 36px;
 }
 
-.pTitle>h5 {
+.pTitle>h3 {
     text-align: left;
-    color: var(--green);
+    color: var(--yellow);
     font-weight: 200;
 }
 
@@ -53,7 +53,7 @@
 
 .galleryGrid img {
     width: 90vw;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .firstCP {
@@ -153,8 +153,7 @@
     .topHeader {
         width: auto;
         height: 114px;
-        font-size: 42px;
-        margin: 80px 36px -49px 36px;
+        margin: 80px 36px 42px 64px;
     }
 
     .pTitle {
@@ -322,9 +321,12 @@
     }
 
     .projectHeader {
-        padding-bottom: 9vh;
+        padding-bottom: 12vh;
         align-items: center;
+        margin-left: 12vw;
+        margin-right: 12vw;
     }
+    
     .containerTopHeader {
         width: 50%;
     }
@@ -358,9 +360,26 @@
         opacity: 0.5;
         filter: blur(100px);
     }
+    .pTitle {
+        width: 50%;
+        margin: 0 25% 0 25%;
+    }
+
+    .pTitle>h3 {
+        margin-right: 25%;
+    }
+
+    .projectDescription {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .projectDescription p {
+        margin: 0 10% 24px 10%;
+    }
     
     .dataAndGallery {
-        margin-top: 4em;
+        margin-top: 12vh;
         display: flex;
         justify-content: space-between;
     }
@@ -388,6 +407,7 @@
      width: 50%;
      filter: brightness(0.6);
      transition: all 0.2s ease-in-out;
+     margin-bottom: 64px;
     }
     .galleryGrid img:hover {
         z-index: 1;

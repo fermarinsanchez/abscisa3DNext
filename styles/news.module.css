@@ -1,7 +1,6 @@
 .topHeader {
   width: 297px;
   margin: 36px 36px 36px 36px;
-  font-size: 58px;
   font-weight: 400;
   text-align: left;
   color: var(--white);
@@ -111,6 +110,39 @@
     margin-top: 56px;
     margin-left: 56px;
     cursor: pointer;
+  }
+
+
+  .generalContainer::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-image: url('https://res.cloudinary.com/dci5hxl4x/image/upload/v1638826543/mobileQuotes_dsh1r2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 13%;
+
+
+    display: block;
+    background-size: 15%;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+
+  }
+
+  
+
+  .cardsContainer {
+    width: 50%;
+    margin-left: 10%;
   }
 
 }

@@ -1,17 +1,38 @@
 import Link from 'next/link'
 import style from '../Footer/Footer.module.css'
+import { useInView, InView } from 'react-intersection-observer';
+
 
 const Footer = () => {
+
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        triggerOnce: true,
+        rootMargin: '-300px 0px',
+      });
+
     return (
         <div>
             <div className={style.containerHeroFooter}>
-                <div className={style.heroFooter}>
-                    <div className={style.heroFooter}>
-                        <p className={style.hero_footer_capturamos}>Capturamos la realidad</p>
-                        <p className={style.hero_footer_convertimos}>y la convertimos en 2d, 3D y BIM</p>
+                
+                    <div 
+                        className={[style.heroFooter, inView && style.growAnimation].join(" ")}
+                        style={{ opacity: inView ? 1 : 0 }}
+                        ref={ref}
+                    >
+                        <h2 className={style.hero_footer_capturamos}
+                        >Capturamos la realidad y la convertimos en 2d, 3D y BIM</h2>
+                     
                     </div>
-                </div>
+            
                 <div className={style.footerLinks}>
+                <div className={style.footerLogo}>
+                <img
+                        src='/images/logo-abscisa-vector.svg'
+                        alt='abscisa3d logo'
+                    />
+                <p>&copy; {new Date().getFullYear()}</p>
+                </div>
                     <div className={style.wrapper_contacto} id="contacto">
                         <h5>Contacto</h5>
                         <div className={style.container_contacto}>

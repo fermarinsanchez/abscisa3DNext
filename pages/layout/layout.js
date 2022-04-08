@@ -35,6 +35,7 @@ export default function Layout({ children, staticElements }) {
                     as="font"
                     crossOrigin=""
                 />
+                
             </Head>
             {staticElements && (
                 <header>

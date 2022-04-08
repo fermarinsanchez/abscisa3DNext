@@ -70,16 +70,6 @@
   animation: fadeUpInH2 1s ease-in;
 }
 
-/* .headers_mobile>h3 {
-  color: #a5a5a5;
-  margin: 0px 100px 0 36px;
-  font-size: 30px;
-  font-weight: 100;
-  line-height: normal;
-  animation: fadeUpInH3 3s ease-in;
-  transition-delay: 2s;
-} */
-
 .homeCTA {
   margin: 24px 10px 0 42px;
   border: 2px solid var(--green);
@@ -104,7 +94,6 @@
   transition: ease-in-out 0.5s;
   font-size: 20px;
 }
-
 
 .homeCTA:hover>p {
   color: black;
@@ -145,10 +134,7 @@
   height: 24px;
 }
 
-
-
 .wrapper_testimonials {
-
   margin: 60px 36px 34px 36px;
 }
 
@@ -405,7 +391,7 @@
 
 .container_sobre_nosotros {
   background-color: #232323;
-  padding-top: 32px;
+  padding-top: 72px;
   padding-bottom: 72px;
   margin-left: -8px;
   margin-right: -8px;
@@ -599,6 +585,10 @@
     margin: 0 auto;
   }
 
+  .container_sobre_nosotros {
+    padding-top: 72px;
+  }
+
   .container_sobre_nosotros>h3 {
     margin-left: 44px;
   }
@@ -751,6 +741,10 @@
 
   .container_sobre_nosotros {
     margin-right: -28px;
+  }
+
+  .sobre_nosotros_text_2 {
+    margin-bottom: 0;
   }
 
   .cubeMobile {

@@ -59,7 +59,7 @@ const ProjectPage = ({ project }) => {
                     </div>
                 </div>
                 <div className={style.pTitle} >
-                    <h5>{project.title}</h5>
+                    <h3>{project.title}</h3>
                 </div>
                 <div className={style.projectDescription}>
                     {project.description.map((elem, index) => {

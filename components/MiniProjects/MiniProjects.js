@@ -3,7 +3,7 @@ import { useInView, InView } from 'react-intersection-observer';
 import style from '../../styles/MiniProjects.module.css'
 
 const MiniProjects = (props) => {
-
+ console.log(props)
     const { ref, inView, entry } = useInView({
         /* Optional options */
         // triggerOnce: true,
@@ -15,19 +15,16 @@ const MiniProjects = (props) => {
     return (
         <>
             <InView >
-                    <Link href={'/projects/[id]'} as={`/projects/${props.id}`} passHref>
-                        <div className={[inView ? style.enterCard : style.exitCard]}
-                            ref={ref}>
-                            <div className={style.card_project} key={props.id}>
-                                <h5 className={style.card_project_title}>{props.name}</h5>
-                                <p className={style.card_project_year}>{props.year}</p>
-                                <div className={style.containerImageProject}>
-                                    <img src={`${props.img}`} alt={`${props.alt}`} className={style.projImage} />
-                                </div>
-                            </div>
+                <Link href={'/projects/[id]'} as={`/projects/${props.id}`} passHref>
+                    <div className={style.card_project} key={props.id}>
+                        <h5 className={style.card_project_title}>{props.name}</h5>
+                        <p className={style.card_project_year}>{props.year}</p>
+                        <div className={style.containerImageProject}>
+                            <img src={`${props.img}`} alt={`${props.alt}`} className={style.projImage} />
                         </div>
-                    </Link>
-                
+                    </div>
+                </Link>
+
 
             </InView>
         </>
