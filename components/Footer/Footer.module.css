@@ -267,7 +267,6 @@
         justify-content: center;
         margin-left: 7vw;
         margin-right: 7vw;
-
     }
 
     .containerHeroFooter {
@@ -275,8 +274,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 7vw 0 7vw;
-        /* background-color: #323231; */
-
+        background-color: #181919;
     }
 
     .heroFooter {

@@ -820,15 +820,15 @@
 
   .logo_wrap img {
     width: 220px;
-    margin-left: 365px;
-    margin-bottom: 34px;
+    margin-left: 20vw;
+    margin-bottom: 14px;
   }
 
   .headers_mobile>h1 {
     font-family: "Apercu Bold";
     font-size: 5.5em;
     font-weight: 200;
-    margin: 8px 35% 17px 25%;
+    margin: 8px 25% 17px 25%;
   }
 
 
