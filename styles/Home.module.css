@@ -65,6 +65,7 @@
   color: var(--white);
   font-weight: 400;
   margin: 8px 25px 12px 36px;
+  font-size: 39px;
   line-height: normal;
   overflow: hidden;
   animation: fadeUpInH2 1s ease-in;
