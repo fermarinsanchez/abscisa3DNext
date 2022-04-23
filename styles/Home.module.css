@@ -341,8 +341,8 @@
   align-items: center;
   color: var(--white);
   animation-name: grow;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
 }
 

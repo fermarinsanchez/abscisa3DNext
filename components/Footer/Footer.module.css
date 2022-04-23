@@ -333,6 +333,9 @@
         justify-content: center;
         order: 2;
     }
+    .container_siguenos_element {
+        margin-left: 12px;
+    }
 
     .container_siguenos>a {
         margin: 10px;

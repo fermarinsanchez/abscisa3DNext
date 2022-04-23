@@ -2,7 +2,7 @@
   width: 252px;
   height: 300px;
   flex-grow: 0;
-  margin: 34px 34px 8px 40px;
+  margin: 0;
   padding: 26px 0 38px 32px;
   border-radius: 4px;
   border: solid 1px var(--white);
@@ -77,7 +77,6 @@
 
   .card_project {
     width: 360px;
-    margin-left: 20%;
     height: 360px;
     cursor: pointer;
   }
