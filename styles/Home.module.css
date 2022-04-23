@@ -893,6 +893,10 @@
     margin-right: 10%;
   }
 
+  .marginLeft {
+    margin-left: 48px;
+  }
+
   .container_mas_noticias {
     display: none;
   }

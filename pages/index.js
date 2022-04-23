@@ -111,7 +111,7 @@ const Home = ({ projects, news }) => {
               <p className={style.leerMas}>Leer más<span><img className={style.chevronRight} src='https://res.cloudinary.com/dci5hxl4x/image/upload/v1639833154/chevron_right_u28er2.svg' alt='chevron right #abscisa3d'/></span></p>
               </a>
             </div>
-            <div className={style.container_testimonial}>
+            <div className={`${style.container_testimonial} ${style.marginLeft}`}>
               <h4>{news[1].title}</h4>
               <h6 className={style.subTitleTestimonial}>{news[1].font}</h6>
               <p>{news[1].text}</p>
