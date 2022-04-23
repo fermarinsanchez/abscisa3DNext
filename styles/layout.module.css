@@ -5,6 +5,7 @@
     left: 0;
     top: 10px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .logo_wrap a {

@@ -24,6 +24,7 @@
 .backgroundHover {
   position: absolute;
   width: 100vw;
+  height: 100vh;
   left: 0%;
   top: 0%;
   right: 0%;
@@ -38,6 +39,7 @@
 .backgroundHoverOutSet {
   position: absolute;
   width: 100vw;
+  height: 100vh;
   left: 0%;
   top: 0%;
   right: 0%;
@@ -827,7 +829,7 @@
 
   .headers_mobile>h1 {
     font-family: "Apercu Bold";
-    font-size: 5.5em;
+    font-size: 3.5em;
     font-weight: 200;
     margin: 8px 25% 17px 25%;
   }
