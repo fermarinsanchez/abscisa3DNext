@@ -210,9 +210,10 @@ const Home = ({ projects, news }) => {
             <div className={style.container_sobre_nosotros}>
               <h3>Sobre #ABSCISA3d</h3>
               <p className={style.sobre_nosotros_text_1} >Somos un estudio especializado en proyectos de nubes de puntos, modelados y BIM.</p>
+              <p className={style.sobre_nosotros_text_1}>Asesoramos a nuestros clientes para obtener el mejor resultado para sus proyectos, desde las diferentes tecnologías de obtención de nube de puntos, láser escáner estáticos, autónomos, portátil y escáner volador. Así como, utilizamos los mejores software para la solución final.</p>
               <p className={style.sobre_nosotros_text_2}>Capturamos la realidad para transformarla en un entorno digital.</p>
             </div>
-            <InView>
+            <InView className={style.cubeContainer}>
               <div className={style.cube}  >
                 <Cube />
               </div>

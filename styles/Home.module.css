@@ -379,6 +379,12 @@
   left: 66px;
 }
 
+.cubeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container_equipo {
   padding-top: 32px;
   padding-bottom: 72px;
@@ -960,7 +966,9 @@
   }
 
   .cube {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 12px;
     padding-right: 300px;
   }
