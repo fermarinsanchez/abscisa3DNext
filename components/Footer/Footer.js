@@ -25,6 +25,14 @@ const Footer = () => {
 
                 </div>
 
+                <div className={style.topoIcon}>
+                <img
+                            src='/images/topografia_icon_final10.png'
+                            alt='abscisa3d logo'
+                        />
+
+                </div>
+
                 <div className={style.footerLinks}>
                     <div className={style.footerLogo}>
                         <img
