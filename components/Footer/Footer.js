@@ -95,7 +95,7 @@ const Footer = () => {
 
             </div>
             <div className={style.smallText}>
-                <small >Sitio web diseñado por <a>Maruxa Moreira</a> y desarrollado por <a>Fernando Marín</a> | &copy; #ABSCISA3d {new Date().getFullYear()}</small>
+                <small >Sitio web diseñado por <a href='https://www.linkedin.com/in/maruxamoreira/'  target='_blank'>Maruxa Moreira</a> y desarrollado por <a href='https://www.linkedin.com/in/fermarinsanchez/' target='_blank'>Fernando Marín</a> | &copy; #ABSCISA3d {new Date().getFullYear()}</small>
             </div>
         </div>
     )
