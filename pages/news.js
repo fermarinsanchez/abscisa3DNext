@@ -27,7 +27,7 @@ export default function news() {
                 <div className={style.generalContainer}>
                     <div>
                         <h3 className={style.topHeader}>
-                            Noticias
+                            Prensa
                         </h3>
                     </div>
                     <section className={style.wrapper_testimonials}>

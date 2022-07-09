@@ -54,7 +54,7 @@ const NavBar = () => {
             </li>
             <li className={style.nav__list_item}>
               <Link href="/news">
-                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Noticias</a>
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Prensa</a>
               </Link>
             </li>
             <li className={style.nav__list_item}>

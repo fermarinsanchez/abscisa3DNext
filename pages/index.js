@@ -92,7 +92,7 @@ const Home = ({ projects, news }) => {
                     src="https://res.cloudinary.com/dci5hxl4x/image/upload/v1638914516/buttonQuotes_idgli3.png"
                     alt='mas noticias icon #ABSCISA3d'
                   />
-                  <p >Más Noticias</p>
+                  <p >Más Prensa</p>
                   <svg viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M11.9041 2.61793L8.99682 0.110804C8.66288 -0.119208 8.48609 0.0187998 8.4468 0.43282V2.22691H0.53038C0.235725 2.22691 0 2.50292 0 2.84794C0 3.21596 0.235725 3.49197 0.53038 3.49197H8.4468V5.42407C8.46644 6.0221 8.66288 6.1141 8.99682 5.88409L11.9041 3.05495C12.022 2.93994 12.0416 2.77894 11.9041 2.61793Z" fill="#05f0d4" />
                   </svg>
@@ -134,7 +134,7 @@ const Home = ({ projects, news }) => {
                   src="https://res.cloudinary.com/dci5hxl4x/image/upload/v1638914516/buttonQuotes_idgli3.png"
                   alt='mas noticias icon #ABSCISA3d'
                 />
-                <p >Más Noticias</p>
+                <p >Más Prensa</p>
                 <svg viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M11.9041 2.61793L8.99682 0.110804C8.66288 -0.119208 8.48609 0.0187998 8.4468 0.43282V2.22691H0.53038C0.235725 2.22691 0 2.50292 0 2.84794C0 3.21596 0.235725 3.49197 0.53038 3.49197H8.4468V5.42407C8.46644 6.0221 8.66288 6.1141 8.99682 5.88409L11.9041 3.05495C12.022 2.93994 12.0416 2.77894 11.9041 2.61793Z" fill="#05f0d4" />
                 </svg>
