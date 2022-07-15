@@ -32,3 +32,5 @@ build/Release
 node_modules
 jspm_packages
 .next
+
+.env.local
