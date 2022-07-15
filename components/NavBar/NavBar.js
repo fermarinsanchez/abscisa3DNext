@@ -60,6 +60,7 @@ const NavBar = () => {
             <li className={style.nav__list_item}>
               <Link href="#contacto">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Contacto</a>
+                
               </Link>
             </li>
           </ul>
