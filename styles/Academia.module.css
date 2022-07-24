@@ -1,0 +1,172 @@
+.topHeader {
+    width: 297px;
+    margin: 36px 36px 36px 36px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--white);
+}
+
+.generalContainer {
+    padding: 10vh 7vw;
+}
+
+.logo_wrap {
+    display: none;
+}
+
+.wrapper_testimonials {
+
+    margin: 60px 36px 34px 36px;
+}
+
+.container_testimonial {
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.imgDestCard {
+    width: 300px;
+    margin-bottom: 36px;
+}
+
+.imgDestShadow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 300px;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(50px);
+}
+
+.container_testimonial h4 {
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.container_testimonial h6 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    font-family: "Apercu Light";
+    margin-top: 0px;
+    line-height: 12px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.container_testimonial p {
+    text-align: left;
+    color: var(--white);
+    font-size: 16px;
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.leerMas {
+    color: var(--green) !important;
+    font-size: 20px !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.chevronRight {
+    width: 10px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -2px;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+/* .newsCard {
+    width: 550px;
+    height: 275px;
+    background: #131313;
+    box-shadow: -9px -7px 29px -13px rgba(255, 254, 237, 0.26), 2px 2px 15px 9px rgba(0, 0, 0, 0.28);
+    border-radius: 8px;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    transition: all .2s ease-in-out
+  }
+  
+  .newsCard:hover {
+    width: 550px;
+    height: 275px;
+    padding: 30px;
+    box-shadow: -14px -10px 34px -13px rgba(255, 254, 237, 0.25), 10px 10px 25px 9px rgba(0, 0, 0, 0.28);
+    transition: all .2s ease-in-out
+  } */
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .logo_wrap {
+        display: block;
+        width: 160px;
+        margin-top: 56px;
+        margin-left: 56px;
+        cursor: pointer;
+    }
+
+
+    /* .generalContainer::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-image: url('https://res.cloudinary.com/dci5hxl4x/image/upload/v1638826543/mobileQuotes_dsh1r2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 13%;
+        z-index: -1;
+
+        display: block;
+        background-size: 15%;
+        width: 100%;
+        height: 100%;
+
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+
+    } */
+
+
+
+    .cardsContainer {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /* Styles */
+}

@@ -4,7 +4,6 @@ import style from '../NavBar/NavBar.module.css'
 
 const NavBar = () => {
 
-
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -50,6 +49,11 @@ const NavBar = () => {
             <li className={style.nav__list_item}>
               <Link href="/projects">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Proyectos</a>
+              </Link>
+            </li>
+            <li className={style.nav__list_item}>
+              <Link href="/academia">
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Academia</a>
               </Link>
             </li>
             <li className={style.nav__list_item}>

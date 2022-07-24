@@ -21,6 +21,10 @@
 .container_testimonial {
   margin-bottom: 50px;
 }
+.container_testimonial > img {
+  width: 300px;
+  margin-bottom: 36px
+}
 
 .container_testimonial h4 {
   text-align: left;
