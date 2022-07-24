@@ -3,7 +3,6 @@ import { useInView, InView } from 'react-intersection-observer';
 import style from '../../styles/MiniProjects.module.css'
 
 const MiniProjects = (props) => {
- console.log(props)
     const { ref, inView, entry } = useInView({
         /* Optional options */
         // triggerOnce: true,

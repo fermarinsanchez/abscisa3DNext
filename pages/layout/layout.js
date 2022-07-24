@@ -3,10 +3,22 @@ import style from '../../styles/layout.module.css'
 import Link from 'next/link'
 import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
+import Router from 'next/router'
 
 export const siteTitle = 'Abscisa3D'
 
 export default function Layout({ children, staticElements }) {
+
+    const handleTagName = (tagName) => {
+        const tagObJect = {
+            "/": "Home",
+            "/academia": "Academia",
+            "/news": "Noticias",
+            "/projects": "Proyectos",
+            "/privacy": "Privacidad",
+        }
+        return tagObJect[tagName]
+    }
 
     return (
         <div>
@@ -16,7 +28,7 @@ export default function Layout({ children, staticElements }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                <title>#ABSCISA3d</title>
+                <title>{`#ABSCISA3d | ${handleTagName(Router?.router?.asPath)}`}</title>
                 <link
                     rel="preload"
                     href="/fonts/Apercu_Regular.otf"
@@ -29,13 +41,13 @@ export default function Layout({ children, staticElements }) {
                     as="font"
                     crossOrigin=""
                 />
-                  <link
+                <link
                     rel="preload"
                     href="/fonts/Apercu_Bold.otf"
                     as="font"
                     crossOrigin=""
                 />
-                
+
             </Head>
             {staticElements && (
                 <header>
