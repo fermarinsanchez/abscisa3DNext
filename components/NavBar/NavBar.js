@@ -51,11 +51,11 @@ const NavBar = () => {
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Proyectos</a>
               </Link>
             </li>
-            <li className={style.nav__list_item}>
+            {/* <li className={style.nav__list_item}>
               <Link href="/academia">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Academia</a>
               </Link>
-            </li>
+            </li> */}
             <li className={style.nav__list_item}>
               <Link href="/news">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Prensa</a>
@@ -64,7 +64,7 @@ const NavBar = () => {
             <li className={style.nav__list_item}>
               <Link href="#contacto">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Contacto</a>
-                
+
               </Link>
             </li>
           </ul>

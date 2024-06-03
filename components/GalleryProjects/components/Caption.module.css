@@ -1,0 +1,7 @@
+.captionContainer {
+  background-color: #181919;
+}
+
+.captionContainer > p {
+  margin: 0;
+}

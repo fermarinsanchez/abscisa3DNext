@@ -1,0 +1,147 @@
+#nuestros_servicios {
+  margin-top: 40px;
+  padding: 200px;
+  display: flex;
+}
+
+.captionContainer > caption {
+  display: block;
+  text-align: left;
+}
+
+.container_one {
+  display: flex;
+  flex-direction: column;
+  margin: 36px;
+  gap: 24px;
+}
+
+.container_two {
+  display: flex;
+  flex-direction: column;
+  margin: 36px;
+  gap: 24px;
+}
+
+.leftContainerImage_one img {
+  width: 100%;
+  height: auto;
+}
+.rigthContainerImage_one img {
+  width: 100%;
+  height: auto;
+}
+.leftContainerImage_two {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.leftContainerImage_two img {
+  width: 100%;
+  height: auto;
+}
+
+.rigthContainerImage_two img {
+  width: 100%;
+  height: auto;
+}
+
+.container_mas_proyectos {
+  margin: 40px 0 49px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: var(--white);
+  gap: 16px;
+  width: 100%;
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.container_mas_proyectos img {
+  width: 30px;
+  height: auto;
+}
+.container_mas_proyectos p {
+  font-size: 16px;
+  width: 110px;
+  margin-left: 8px;
+}
+
+.container_mas_proyectos svg {
+  width: 20px;
+  height: auto;
+}
+.projectsIcon {
+  width: 40px !important;
+}
+
+.container_with_arrow {
+  display: flex;
+  align-items: center;
+  margin: 6px 8px 5px 13px;
+  color: var(--green);
+}
+
+.container_with_arrow > p {
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .container_one {
+    display: flex;
+    flex-direction: row;
+  }
+  .leftContainerImage_one {
+    width: 838px;
+    height: 420px;
+    overflow: hidden;
+  }
+  .rigthContainerImage_one {
+    width: 610px;
+    height: 720px;
+    overflow: hidden;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
