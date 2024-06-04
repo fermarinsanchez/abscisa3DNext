@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./NewsCard.module.css";
 const NewsCard = ({ index, data }) => {
-  console.log(data);
   return (
     <div>
       <a

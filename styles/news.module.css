@@ -73,8 +73,15 @@
   gap: 24px;
 }
 
+.image > img {
+  width: 100%;
+}
+
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) and (orientation: landscape) {
+  .topHeader {
+    padding-top: 64px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */

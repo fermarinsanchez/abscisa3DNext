@@ -1,12 +1,11 @@
 import React from "react";
-import { isMobile, isTablet } from "react-device-detect";
 import styles from "./AcademyCard.module.css";
 const AcademyCard = ({ imagePosition, src, title, targetId, description }) => {
   return (
     <div className={styles.root}>
       <div
         className={styles.image}
-        style={{ order: isMobile && !isTablet ? 0 : imagePosition }}
+        style={{ order: imagePosition }}
       >
         <div
           style={{

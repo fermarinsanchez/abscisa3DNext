@@ -3,13 +3,15 @@ import Link from "next/link";
 import style from "../styles/Home.module.css";
 import { data } from "../json_projects/data";
 import { news } from "../json_projects/news";
-import { useInView, InView } from "react-intersection-observer";
+import { InView } from "react-intersection-observer";
 import Cube from "../components/Cube/Cube";
 import ScrollButton from "../components/ScrollButton/ScrollButton";
 import { GalleryProjects } from "../components/GalleryProjects/GalleryProjects";
 import Carousel from "../components/Carousel/Carousel";
 import { NewsCard } from "../components/NewsCard/NewsCard";
 import AcademyCard from "../components/AcademyCard/AcademyCard";
+import { isMobile } from "react-device-detect";
+
 
 export const getStaticProps = async () => {
   return {
@@ -24,13 +26,6 @@ const Home = ({ projects, news }) => {
   const newsItems = news.map((elem, index) => {
     return <NewsCard index={index} />;
   });
-  console.log(newsItems);
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    triggerOnce: true,
-    rootMargin: "-300px 0px",
-  });
-
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -82,11 +77,6 @@ const Home = ({ projects, news }) => {
             <br />
             la realidad y la convertimos en 2D, 3D y BIM
           </h1>
-          {/* <Link href='/projects' passHref>
-            <div className={style.homeCTA}>
-              <p>Ver proyectos</p>
-            </div>
-          </Link> */}
         </div>
       </section>
       <ScrollButton />
@@ -137,7 +127,7 @@ const Home = ({ projects, news }) => {
                 "Desde la captura, gestión, procesamiento y manejo de la nube de puntos, nos adaptamos a tus inquietudes para elaborar tus sesiones.",
               ]}
               targetId="contacto"
-              imagePosition={1}
+              imagePosition={isMobile ? 0 : 1}
             />
             <AcademyCard
               src="/images/academia_ordenador.jpg"
