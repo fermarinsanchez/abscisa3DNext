@@ -1,0 +1,65 @@
+.logo_wrap {
+    display: none;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+    margin-top: 64px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .logo_wrap {
+    display: block;
+    width: 160px;
+    margin-top: 56px;
+    margin-left: 56px;
+    cursor: pointer;
+}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .logo_wrap img {
+        width: 120px;
+
+    }
+}

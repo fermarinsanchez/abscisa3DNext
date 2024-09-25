@@ -16,6 +16,7 @@ export default function Layout({ children, staticElements }) {
             "/news": "Noticias",
             "/projects": "Proyectos",
             "/privacy": "Privacidad",
+            "/catedral-de-toledo": "Catedral de Toledo",
         }
         return tagObJect[tagName]
     }
