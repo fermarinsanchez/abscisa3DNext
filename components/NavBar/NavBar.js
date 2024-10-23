@@ -51,11 +51,11 @@ const NavBar = () => {
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Proyectos</a>
               </Link>
             </li>
-            {/* <li className={style.nav__list_item}>
-              <Link href="/academia">
-                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Academia</a>
+            <li className={style.nav__list_item}>
+              <Link href="/catedral-de-toledo">
+                <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Catedral de Toledo</a>
               </Link>
-            </li> */}
+            </li>
             <li className={style.nav__list_item}>
               <Link href="/news">
                 <a onClick={() => closeMenu()} id="contact" className={style.menu_item} >Prensa</a>

@@ -2,10 +2,29 @@
     display: none;
 }
 
+.link {
+    color: var(--green);
+    cursor: pointer;
+}
+.title {
+    font-size: 24px !important;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center !important;
+    padding-bottom: 24px;
+}
+
+.link:visited {
+    color: grey;
+}
+
+.mainContent {
+    margin: 0px 7vw;
+}
+
 .content {
- 
-    text-align: center;
-    padding: 40px;
+    text-align: left;
+    padding: 40px 0px 40px 0px;
     margin-top: 64px;
 }
 
@@ -28,21 +47,87 @@
     max-width: 800px;
     height: auto;
     border-radius: 8px;
+    padding-bottom: 24px;
 }
 
+.imageTop {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 24px;
+}
+
+.bottomLogosWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.bottomLogos {
+    margin-top: 24px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.bottomLogos img {
+    width: 200px;
+    height: auto;
+}
+.logoCatedral {
+        width: 100px !important;
+    }
+.logoCOIGT {
+    filter: invert(1);
+    width: 200px !important;
+
+}
+
+
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation : landscape) {}
+@media only screen and (min-width : 321px) and (orientation : landscape) {
+}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .image {
+    width: auto;
+    max-width: 50%;
+    height: 300px !important;
+}
+ 
+}
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
+     .image {
+    width: auto;
+    max-width: 50%;
+    height: 300px !important;
+}
+  
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+     .image {
+    width: auto;
+    max-width: 50%;
+    height: 300px !important;
+}
+
+.imageTop {
+    max-width: 50%;
+   
+}
+ 
     .content {
         display: flex;
         flex-direction: column;
@@ -59,6 +144,17 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+     .image {
+    width: auto;
+    max-width: 50%;
+    height: 400px !important;
+}
+
+.imageTop {
+    max-width: 50%;
+   
+}
+
     .logo_wrap {
         display: block;
         width: 160px;

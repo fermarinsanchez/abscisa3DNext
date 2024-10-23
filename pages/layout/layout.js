@@ -20,7 +20,14 @@ export default function Layout({ children, staticElements }) {
         }
         return tagObJect[tagName]
     }
+    const getPathWithoutHash = (path) => {
+        if (path && path.includes('#')) {
+            return path.split('#')[0];
+        }
+        return path;
+    };
 
+    const currentPath = getPathWithoutHash(Router?.router?.asPath);
     return (
         <div>
             <Head>
@@ -29,7 +36,7 @@ export default function Layout({ children, staticElements }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                <title>{`#ABSCISA3d | ${handleTagName(Router?.router?.asPath)}`}</title>
+                <title>{`#ABSCISA3d | ${handleTagName(currentPath)}`}</title>
                 <link
                     rel="preload"
                     href="/fonts/Apercu_Regular.otf"
